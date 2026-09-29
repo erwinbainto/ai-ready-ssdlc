@@ -1,0 +1,22 @@
+{
+  "_comment": "Route B variant. Use this in managed-settings.json if not using managed-mcp.json (Route A).",
+  "managedMcpServers": {
+    "<SERVER_CATEGORY_1>": {
+      "type": "http",
+      "url": "<ENDPOINT_URL>"
+    },
+    "<SERVER_CATEGORY_2>": {
+      "type": "http",
+      "url": "<ENDPOINT_URL>"
+    },
+    "<SERVER_CATEGORY_3>": {
+      "type": "http",
+      "url": "<ENDPOINT_URL>"
+    }
+  },
+  "allowedMcpServers": [
+    "<SERVER_CATEGORY_1>",
+    "<SERVER_CATEGORY_2>",
+    "<SERVER_CATEGORY_3>"
+  ]
+}

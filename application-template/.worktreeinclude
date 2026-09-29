@@ -1,0 +1,13 @@
+# Untracked files the build actually needs.
+# These files are not committed to source control but are required during builds.
+# List them here so Claude Code includes them in worktrees created for isolated analysis.
+#
+# Examples:
+# - .env.local (if commits don't include it)
+# - build cache (.gradle/, node_modules/ if pre-installed)
+# - Credentials or tokens needed for private dependencies
+#
+# Format: one path per line, relative to the repository root.
+# Use * for wildcards: `.env.*` matches all env files.
+
+# <ADD_PATHS_HERE>

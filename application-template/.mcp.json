@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "source-control": {
+      "type": "http",
+      "url": "<FROM_ADMITTED_CATALOGUE>"
+    },
+    "work-management": {
+      "type": "http",
+      "url": "<FROM_ADMITTED_CATALOGUE>"
+    },
+    "build-and-test": {
+      "type": "http",
+      "url": "<FROM_ADMITTED_CATALOGUE>"
+    }
+  }
+}

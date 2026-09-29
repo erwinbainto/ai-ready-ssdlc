@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D4 Harness — How to use this approach</title>
+<style>
+  :root{
+    --deep:#460073; --mid:#7500C0; --acc:#A100FF; --ink:#1a1a1a; --mut:#5a5a66;
+    --line:#d9d9e3; --card:#f5f2fa; --tint:#f0eafb; --bord:#b8b4c6; --w:#fff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;color:var(--ink);
+    line-height:1.55;background:var(--w)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px 120px}
+  header{background:var(--deep);color:#fff;padding:54px 0 46px;margin-bottom:8px}
+  header .wrap{padding-bottom:0}
+  .brand{font-weight:600;letter-spacing:.5px;font-size:15px;opacity:.85}
+  h1{font-size:40px;margin:.4em 0 .2em;font-weight:700;line-height:1.1}
+  .sub{font-size:18px;opacity:.9;max-width:760px}
+  .tagline{font-style:italic;margin-top:18px;opacity:.8;font-size:15px}
+  h2{color:var(--deep);font-size:26px;margin:52px 0 14px;font-weight:700}
+  h3{color:var(--acc);font-size:18px;margin:30px 0 8px;font-weight:600;
+    text-transform:uppercase;letter-spacing:1px}
+  p{margin:.5em 0}
+  code,kbd{font-family:"Consolas",ui-monospace,monospace;background:var(--card);
+    color:var(--deep);padding:2px 6px;border-radius:4px;font-size:.9em}
+  pre{background:var(--card);border:1px solid var(--line);border-radius:8px;
+    padding:16px 18px;overflow-x:auto;font-family:"Consolas",monospace;font-size:14px;
+    color:var(--deep)}
+  .rule{height:4px;width:56px;background:var(--acc);border-radius:2px;margin:6px 0 22px}
+  .flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;margin:26px 0 8px}
+  .step{flex:1;min-width:150px;background:var(--w);border:1.5px solid var(--acc);
+    border-radius:10px;padding:16px 14px;position:relative}
+  .step.alt{background:var(--tint)}
+  .step .n{display:inline-flex;width:26px;height:26px;border-radius:6px;background:var(--acc);
+    color:#fff;font-weight:700;font-size:13px;align-items:center;justify-content:center;
+    margin-bottom:8px}
+  .step h4{margin:0 0 4px;font-size:15px;color:var(--deep)}
+  .step p{margin:0;font-size:13px;color:var(--mut)}
+  .arrow{align-self:center;color:var(--mid);font-size:26px;padding:0 4px;font-weight:700}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:18px 20px;margin:18px 0}
+  .card.accent{background:var(--tint);border-color:var(--acc)}
+  .card .lbl{font-weight:700;color:var(--deep)}
+  table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+  th{background:var(--deep);color:#fff;text-align:left;padding:9px 12px;font-weight:600}
+  td{border:1px solid var(--line);padding:9px 12px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--card)}
+  .tag{display:inline-block;background:var(--tint);color:var(--deep);border:1px solid var(--acc);
+    border-radius:5px;padding:1px 8px;font-size:12px;font-weight:600;margin:1px 2px}
+  .pill{display:inline-block;background:var(--deep);color:#fff;border-radius:5px;
+    padding:1px 8px;font-size:12px;font-weight:600}
+  ol.big{counter-reset:s;list-style:none;padding-left:0}
+  ol.big>li{counter-increment:s;position:relative;padding:12px 0 12px 46px;
+    border-bottom:1px solid var(--line)}
+  ol.big>li::before{content:counter(s);position:absolute;left:0;top:12px;width:30px;height:30px;
+    background:var(--acc);color:#fff;border-radius:7px;display:flex;align-items:center;
+    justify-content:center;font-weight:700}
+  ol.big>li b{color:var(--deep)}
+  .warn{border-left:4px solid var(--acc);background:var(--tint);padding:12px 16px;
+    border-radius:0 8px 8px 0;margin:16px 0}
+  .muted{color:var(--mut);font-size:14px}
+  .foot{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
+    color:var(--bord);font-size:13px}
+  .filetag{font-family:Consolas,monospace;font-size:13px;color:var(--mid)}
+  @media(max-width:720px){.flow{flex-direction:column}.arrow{transform:rotate(90deg);padding:2px 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">&gt; Accenture &nbsp;|&nbsp; RRD Autonomous Development</div>
+    <h1>D4 Harness — how the approach works</h1>
+    <div class="sub">From filled-in forms to Claude Code artefacts to the D4 deck. What each
+      piece is, the order to do them in, and what proves the deliverable.</div>
+    <div class="tagline">Accenture Reinvention Delivery Engine. Foundation first, evidence before scale.</div>
+  </div>
+</header>
+<div class="wrap">
+
+  <h2>The chain</h2>
+  <div class="rule"></div>
+  <p>D4 is the <b>harness deliverable</b>. Everything else is either an input to it or evidence
+  of it. The reference architecture is the design; the forms capture the decisions; the artefacts
+  <em>are</em> D4 in deployable form; the deck reports what was built.</p>
+
+  <div class="flow">
+    <div class="step"><span class="n">1</span><h4>Reference architecture</h4>
+      <p>The design. How a Claude Code harness is structured. The deck you already have.</p></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step alt"><span class="n">2</span><h4>Fill the forms</h4>
+      <p>Enterprise once, application five times. The decisions that shape the harness.</p></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">3</span><h4>Generate artefacts</h4>
+      <p>The forms&rsquo; GENERATE steps produce the real Claude Code files. This is D4.</p></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step alt"><span class="n">4</span><h4>Brief &rarr; deck</h4>
+      <p>A script reads the forms and writes the brief Claude uses to build the D4 deck.</p></div>
+  </div>
+
+  <h2>The files, and what each is for</h2>
+  <div class="rule"></div>
+  <table>
+    <tr><th>File</th><th>Who</th><th>When</th><th>What it is</th></tr>
+    <tr><td class="filetag">Claude_Code_Reference_Architecture.pptx</td><td>architects, tech lead</td>
+      <td>reference</td><td>The design. Not filled in — read from.</td></tr>
+    <tr><td class="filetag">D4_Enterprise_Harness_Form.md</td><td>technical lead</td>
+      <td>once</td><td>Fill-in form for tiers 0–1. Its GENERATE steps produce the enterprise artefacts.</td></tr>
+    <tr><td class="filetag">D4_Application_Harness_Form.md</td><td>FDE + Dev Lead</td>
+      <td>&times;5</td><td>Fill-in form for tier 3. One copy per application.</td></tr>
+    <tr><td class="filetag">d4-harness/</td><td>the engineer</td>
+      <td>generated</td><td>The artefact tree the forms produce: CLAUDE.md, settings, .mcp.json, agents, skills, hooks.</td></tr>
+    <tr><td class="filetag">genbrief.py</td><td>anyone</td>
+      <td>after forms</td><td>Reads the six filled forms, writes the deck brief.</td></tr>
+    <tr><td class="filetag">D4_Harness_Deck_Brief.md</td><td>&rarr; Claude</td>
+      <td>generated</td><td>The instruction Claude uses to build the D4 deck in the reference-architecture style.</td></tr>
+  </table>
+
+  <h2>Step by step</h2>
+  <div class="rule"></div>
+  <ol class="big">
+    <li><b>Read the reference architecture deck.</b> You are producing the delivery instance of
+      it. The tiers, primitives and plateau notation on the D4 deck all come from here.</li>
+    <li><b>Fill the enterprise form once.</b> Start with section&nbsp;0 — the seven decisions that
+      gate everything. Two of them, <span class="tag">KPI freeze</span>
+      <span class="tag">memory tiers</span>, must be agreed in writing with RRD or you stop.</li>
+    <li><b>Run each GENERATE step</b> in the enterprise form to produce the <code>enterprise/</code>
+      artefacts, then publish them as a plugin. Record the version.</li>
+    <li><b>Fill the application form five times</b>, one per app, each citing the enterprise
+      version. The knowledge connection (<code>.claude/context/</code>) is drafted by the
+      <code>explorer</code> agent and corrected by the Dev Lead — it cannot be templated.</li>
+    <li><b>Run the write-attempt test</b> per app. Attempt an edit; capture the refusal and the
+      trace reference. This is the single row that <em>proves</em> read-only rather than asserting it.</li>
+    <li><b>Verify</b> with the routine: <code>/status</code>, <code>/context</code>,
+      <code>/mcp</code>, <code>/agents</code>, <code>/skills</code>, <code>/hooks</code>,
+      <code>/doctor</code>, <code>/usage</code>.</li>
+    <li><b>Generate the brief.</b> Run the script over the six filled forms.</li>
+    <li><b>Hand the brief to Claude</b> with: <em>&ldquo;build the D4 harness deck from this
+      brief.&rdquo;</em> The deck comes back in the reference-architecture style.</li>
+  </ol>
+
+  <h2>Running the generator</h2>
+  <div class="rule"></div>
+  <p>Once all six forms are filled:</p>
+<pre>python3 genbrief.py \
+  --enterprise D4_Enterprise_Harness_Form.md \
+  --apps app1.md app2.md app3.md app4.md app5.md \
+  --out D4_Harness_Deck_Brief.md</pre>
+  <p class="muted">The parser tolerates hand formatting and reads values from the tables by
+  section. Any field left as <code>&lt;...&gt;</code> is carried through as
+  <b>NOT PROVIDED</b>, so an incomplete form still produces a usable brief that shows exactly
+  what is missing rather than failing.</p>
+
+  <div class="card accent">
+    <span class="lbl">What the brief contains.</span> A slide plan mapped to specific
+    reference-architecture slides, the resolved enterprise values, a resolved block per
+    application, a per-application status table with a derived
+    <span class="tag">Full</span> <span class="tag">Reduced</span>
+    <span class="pill">Substituted</span> profile, and a consolidated open-items list. Claude
+    turns that into the deck.
+  </div>
+
+  <h2>How the forms map to the deck</h2>
+  <div class="rule"></div>
+  <p>Each part of the brief points at the reference-architecture slide it is styled from, so the
+  D4 deck reads as the same family:</p>
+  <table>
+    <tr><th>Form section</th><th>Produces</th><th>Deck slide (styled from)</th><th>Primitive</th></tr>
+    <tr><td>Enterprise §2 tool access</td><td>admitted catalogue</td><td>MCP access control</td><td>4</td></tr>
+    <tr><td>Enterprise §3 boundary</td><td>permissions + hook</td><td>deployment / boundary</td><td>5, 7</td></tr>
+    <tr><td>Enterprise §4–9</td><td>instructions, rules, agents, skills</td><td>enterprise harness</td><td>1,2,3,8,9,10</td></tr>
+    <tr><td>App §1–2</td><td>app CLAUDE.md + context pack</td><td>application instance</td><td>1,2,3</td></tr>
+    <tr><td>App §4–5</td><td>bindings + settings + write test</td><td>application instance</td><td>4,5</td></tr>
+    <tr><td>App §9 extensions</td><td>extension register</td><td>extension mechanisms</td><td>&mdash;</td></tr>
+    <tr><td>All §status</td><td>profile per app</td><td>implementation profiles</td><td>&mdash;</td></tr>
+  </table>
+
+  <h2>What actually satisfies D4</h2>
+  <div class="rule"></div>
+  <p>Filling the forms is not the deliverable. Three things have to be true:</p>
+  <div class="card">
+    <p><b>1. The artefacts exist and are deployed.</b> A location written in a form is a pointer,
+    not a file. The GENERATE steps have to be run and the config committed.</p>
+    <p><b>2. The boundary is demonstrated, not asserted.</b> The write-attempt test, with a trace
+    reference, is the proof. Without it, &ldquo;read-only&rdquo; is a claim.</p>
+    <p><b>3. It is showcased live.</b> D4 is showcased in system and Claude artefacts. RRD sees the
+    harness answer a real question against their code, a server return a real result, and a write
+    be refused. The forms and records are the supporting evidence, not the deliverable itself.</p>
+  </div>
+
+  <div class="warn">
+    <b>Two stop conditions.</b> A <span class="pill">Substituted</span> profile on the execution
+    boundary means read-only is not enforced — nothing runs. A <span class="pill">Substituted</span>
+    profile on assurance means nothing that runs can be evidenced — no D10. Everything else has a
+    reduced implementation you can deploy now and record honestly with a compensating control.
+  </div>
+
+  <div class="warn">
+    <b>Version caution.</b> Claude Code keys and behaviour change between releases. Before relying
+    on any generated file, run <code>claude plugin validate</code> and <code>/doctor</code>, and
+    confirm <code>/status</code>, <code>/mcp</code> and <code>/hooks</code> show what you expect.
+    There are field reports of file-read <code>deny</code> rules being ignored, so the read-only
+    boundary is held by the <b>PreToolUse hook</b> as well as the deny list — never the deny list alone.
+  </div>
+
+  <div class="warn">
+    <b>Stack input still needed.</b> Language globs, build commands and language-server choice are
+    marked <code>&lt;STACK&gt;</code>. The rules and command contracts are structurally complete but
+    not usable until the real languages per application are filled in.
+  </div>
+
+  <div class="foot">
+    Accenture Confidential. Contains client engagement structure. Distribute to the named
+    engagement team only.
+  </div>
+</div>
+</body>
+</html>

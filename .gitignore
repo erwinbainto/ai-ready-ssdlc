@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.sublime-*
+
+# Build artifacts
+target/
+dist/
+build/
+*.jar
+*.war
+node_modules/
+.next/
+
+# Environment files
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# OS files
+Thumbs.db
+desktop.ini

@@ -1,0 +1,50 @@
+{
+  "_comment_scope": "Tier 0. Deploy to the system path, or deliver via server-managed settings. Keys below are the enforcement set for the SSDLC, governed mode.",
+  "permissions": {
+    "deny": [
+      "Write",
+      "Edit",
+      "NotebookEdit",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git merge:*)",
+      "Bash(git rebase:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr merge:*)",
+      "Bash(rm:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(**/*secret*)",
+      "Read(**/*credential*)",
+      "Read(**/id_rsa)"
+    ],
+    "ask": [
+      "Bash(<ANY_COMMAND_NEEDING_APPROVAL>:*)"
+    ],
+    "allow": [
+      "Bash(<BUILD_COMMAND>:*)",
+      "Bash(<TEST_COMMAND>:*)",
+      "Bash(<LINT_COMMAND>:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)"
+    ]
+  },
+  "disableBypassPermissionsMode": "disable",
+  "allowManagedHooksOnly": "<true_or_false>",
+  "strictKnownMarketplaces": true,
+  "extraKnownMarketplaces": {
+    "<YOUR_MARKETPLACE_NAME>": {
+      "source": {
+        "source": "url",
+        "url": "<YOUR_MARKETPLACE_URL>"
+      }
+    }
+  },
+  "cleanupPeriodDays": "<RETENTION_DAYS_AGREED_WITH_SECURITY>",
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "1",
+    "OTEL_METRICS_EXPORTER": "otlp",
+    "OTEL_EXPORTER_OTLP_ENDPOINT": "<CLIENT_OTLP_ENDPOINT>"
+  }
+}

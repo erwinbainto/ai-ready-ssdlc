@@ -1,0 +1,29 @@
+{
+  "_comment_scope": "Tier 3. Narrows the enterprise policy for this application. It cannot widen it: a managed deny is not removable, and with the allowlist lock set, non-managed allowlists are ignored.",
+  "permissions": {
+    "deny": [
+      "Read(<ANY_PATH_THIS_APP_MUST_NOT_EXPOSE>)"
+    ],
+    "allow": [
+      "Bash(<BUILD_COMMAND>:*)",
+      "Bash(<TEST_COMMAND>:*)",
+      "Bash(<LINT_COMMAND>:*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/session-start.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "env": {
+    "RRD_APP_NAME": "<APPLICATION_NAME>",
+    "RRD_HARNESS_VERSION": "<ENTERPRISE_PLUGIN_VERSION>"
+  }
+}

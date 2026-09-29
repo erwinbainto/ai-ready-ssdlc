@@ -1,0 +1,17 @@
+{
+  "_comment": "Tier 0. Placed at system path. Enforces the MCP server catalogue. Route A only (not delivered via settings).",
+  "mcpServers": {
+    "<SERVER_CATEGORY_1>": {
+      "type": "http",
+      "url": "<ENDPOINT_URL>"
+    },
+    "<SERVER_CATEGORY_2>": {
+      "type": "http",
+      "url": "<ENDPOINT_URL>"
+    },
+    "<SERVER_CATEGORY_3>": {
+      "type": "http",
+      "url": "<ENDPOINT_URL>"
+    }
+  }
+}

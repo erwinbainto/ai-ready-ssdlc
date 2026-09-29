@@ -1,0 +1,14 @@
+{
+  "name": "<YOUR_MARKETPLACE_NAME>",
+  "owner": {
+    "name": "<OWNING_TEAM>",
+    "email": "<EMAIL>"
+  },
+  "plugins": [
+    {
+      "name": "ai-ready-ssdlc-harness",
+      "source": "./",
+      "description": "Enterprise harness set for AI-Ready Secure Software Development Lifecycle."
+    }
+  ]
+}

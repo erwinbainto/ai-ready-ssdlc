@@ -1,0 +1,16 @@
+{
+  "name": "ai-ready-ssdlc-harness",
+  "version": "0.1.0",
+  "description": "AI-Ready Secure Software Development Lifecycle enterprise harness: instructions, rules, agent roles and seed skills for governed development across applications.",
+  "author": {
+    "name": "<TECHNICAL_LEAD>",
+    "email": "<EMAIL>"
+  },
+  "homepage": "<INTERNAL_DOC_URL>",
+  "keywords": [
+    "ssdlc",
+    "harness",
+    "secure-sdlc",
+    "ai-ready"
+  ]
+}
