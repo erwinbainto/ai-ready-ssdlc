@@ -4,6 +4,76 @@
 
 ---
 
+## Table of Contents
+
+1. [Quick Overview](#quick-overview)
+
+2. [Part 1: Enterprise Harness (Tier 0-1)](#part-1-enterprise-harness-tier-0-1)
+   - [What It Is](#what-it-is)
+   - [Key Principle](#key-principle)
+   - [Enterprise Directory Structure](#enterprise-directory-structure)
+   - [Enterprise: Usage at a Glance](#enterprise-usage-at-a-glance)
+   - [Enterprise Deployment Flow](#enterprise-deployment-flow)
+
+3. [Part 2: Application Harness (Tier 3)](#part-2-application-harness-tier-3)
+   - [What It Is](#what-it-is-1)
+   - [Key Principle](#key-principle-1)
+   - [Application Template Directory Structure](#application-template-directory-structure)
+   - [Application: Usage at a Glance](#application-usage-at-a-glance)
+
+4. [Part 3: The `.claude/` Folder Explained](#part-3-the-claude-folder-explained)
+   - [Purpose: Auto-Loaded Configuration](#purpose-auto-loaded-configuration)
+   - [Key Subfolders](#key-subfolders)
+     - [`.claude/context/` — Knowledge Base](#claude-context--knowledge-base)
+     - [`.claude/rules/` — Enforced Standards](#claude-rules--enforced-standards)
+     - [`.claude/hooks/` — Lifecycle Automation](#claude-hooks--lifecycle-automation)
+
+5. [Part 4: The `docs/` Folder Explained](#part-4-the-docs-folder-explained)
+   - [Purpose: On-Demand Reference](#purpose-on-demand-reference-not-auto-loaded)
+   - [Key Subfolders](#key-subfolders-1)
+     - [`docs/security/` — Compliance & Threat Documentation](#docssecurity--compliance--threat-documentation)
+     - [`docs/guides/` — Detailed How-To](#docsguides--detailed-how-to-created-by-template)
+     - [`docs/architecture/` — Design Documentation](#docsarchitecture--design-documentation)
+
+6. [Part 5: Enterprise vs. Application Rules](#part-5-enterprise-vs-application-rules)
+   - [Rule Inheritance Hierarchy](#rule-inheritance-hierarchy)
+   - [Examples](#examples)
+
+7. [Part 6: Deployment Workflow](#part-6-deployment-workflow)
+   - [Step 1: Deploy Enterprise Harness (Once)](#step-1-deploy-enterprise-harness-once)
+   - [Step 2: Deploy Application Harness (Per App)](#step-2-deploy-application-harness-per-app)
+
+8. [Part 7: Quick Start Checklist](#part-7-quick-start-checklist)
+   - [For Platform/Security Team (Enterprise)](#for-platformsecurity-team-enterprise)
+   - [For Dev Lead (Application)](#for-dev-lead-application)
+
+9. [Part 8: File Size & Context Budget](#part-8-file-size--context-budget)
+   - [Auto-Loaded Files (Always Count)](#auto-loaded-files-always-count)
+   - [On-Demand Files (Don't Count Unless Read)](#on-demand-files-dont-count-unless-read)
+   - [Context Efficiency Principle](#context-efficiency-principle)
+
+10. [Part 9: Common Workflows](#part-9-common-workflows)
+    - [Workflow 1: Team Member Starts on New App](#workflow-1-team-member-starts-on-new-app)
+    - [Workflow 2: Security Review / Audit](#workflow-2-security-review--audit)
+    - [Workflow 3: Add New Security Rule](#workflow-3-add-new-security-rule)
+    - [Workflow 4: Handle Incident](#workflow-4-handle-incident)
+
+11. [Part 10: Key Principles](#part-10-key-principles)
+    - [1. Reference, Never Copy](#1-reference-never-copy)
+    - [2. Permissions: Narrow, Never Widen](#2-permissions-narrow-never-widen)
+    - [3. Placeholders: Complete All](#3-placeholders-complete-all)
+    - [4. Auto-Loaded: Keep Concise](#4-auto-loaded-keep-concise)
+
+12. [Part 11: Troubleshooting](#part-11-troubleshooting)
+
+13. [Part 12: Related Files & Commands](#part-12-related-files--commands)
+
+14. [Part 13: Summary Table](#part-13-summary-table)
+
+15. [Quick Reference: Where to Find What](#quick-reference-where-to-find-what)
+
+---
+
 ## Quick Overview
 
 The AI-Ready SSDLC Harness is a **two-tier governance system** for Claude Code:
