@@ -215,7 +215,9 @@ Five roles ship as-is; you only confirm enablement and isolation.
 ## 9. Skills + eval gate (primitives 9, 10)
 
 Five seed skills ship as folders with `SKILL.md`. Nothing is published at P1 without an eval
-suite showing a positive delta against a no-plugin baseline.
+suite showing a positive delta against a no-plugin baseline. Evals are **publication gates**:
+they validate skill contribution before release. Applications do not run evals in D4 (skills
+are not published until WP2/D11); see `application-template/evals/README.md`.
 
 | Skill | Invocation | Ship at P1 |
 |---|---|---|

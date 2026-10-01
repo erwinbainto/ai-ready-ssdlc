@@ -167,7 +167,9 @@ Hooks: only if the enterprise policy permits pod hooks (enterprise form 0.4). En
 
 ## 7. Capability candidates (primitive 9)
 
-Log as real patterns appear. Nothing is published here — publication is WP2 / D11.
+Log as real patterns appear. Nothing is published here — publication is WP2 / D11. When skills
+are ready to publish in future phases, evals will validate them; see `evals/README.md` for the
+publication pattern.
 
 | Candidate | Observed need | Invocation | Owner | Logged |
 |---|---|---|---|---|

@@ -108,6 +108,7 @@ The output (`D4_Harness_Deck_Brief.md`) is instructions and data for Claude to b
 - **Settings** (`.claude/settings.json`): Permissions narrowed, hooks wired. Never looser than enterprise.
 - **Agents** (`.claude/agents/`): Roles enabled for this app (usually empty; uses enterprise set).
 - **Skills** (`.claude/skills/`): App-specific capabilities (usually empty; uses enterprise set).
+- **Evals** (`evals/`): Reserved for future skill publication gates (WP2/D11). Empty in D4; see `evals/README.md` for the publication pattern.
 
 ## Verification workflow
 
