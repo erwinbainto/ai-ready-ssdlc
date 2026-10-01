@@ -1,16 +1,37 @@
 ---
-description: Conventions specific to this application.
-paths: ["<APP_SPECIFIC_GLOBS>"]
+description: App-specific conventions and guardrails for <APPLICATION_NAME>
+paths: ["<STACK>"]
 ---
 
-# <APPLICATION_NAME> conventions
+# <APPLICATION_NAME> Conventions
 
-Loads when matching files enter context. Keep this to what is true only here; anything
-true across applications belongs in the enterprise rules.
+App-specific conventions that narrow enterprise standards. Never looser.
 
-- <convention, with the reason it exists>
-- <convention, with the reason it exists>
+**Last Updated:** <YYYY-MM-DD>  
+**Owner:** <Dev Lead>  
+**Reference:** `@enterprise/rules/` (enterprise-wide standards)
 
-## Do not
+---
 
-- <pattern that looks reasonable but is wrong here, and why>
+## Development Conventions
+
+| Convention | Reason |
+|---|---|
+| <convention> | <why it exists> |
+
+---
+
+## Do Not
+
+- <pattern that looks reasonable but is wrong here>
+- <dangerous shortcut>
+- <common mistake>
+
+---
+
+## Full Guidance
+
+See `docs/guides/rules/README.md` for:
+- How to create rules
+- Examples by stack (Java, Node.js, Python, React)
+- Enforcement methods (linting, pre-commit, tests)

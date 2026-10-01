@@ -141,7 +141,7 @@ Copy this directory into each application repository and complete it per the che
 
 ### `.claude/context/` — Knowledge Connection
 
-**Start here:** See `.claude/context/README.md` for detailed instructions.
+**Start here:** See `docs/guides/context/README.md` for detailed instructions.
 
 | File | Audience | Effort | How to Complete |
 |---|---|---|---|
@@ -153,7 +153,7 @@ Copy this directory into each application repository and complete it per the che
 
 ### `.claude/rules/` — Enforced Standards
 
-**Start here:** See `.claude/rules/README.md` for detailed instructions.
+**Start here:** See `docs/guides/rules/README.md` for detailed instructions.
 
 | File | Scope | How to Complete |
 |---|---|---|
@@ -162,7 +162,7 @@ Copy this directory into each application repository and complete it per the che
 
 ### `.claude/hooks/` — Lifecycle Automation
 
-**Start here:** See `.claude/hooks/README.md` for detailed instructions.
+**Start here:** See `docs/guides/hooks/README.md` for detailed instructions.
 
 | Hook | Purpose | When Configured |
 |---|---|---|
