@@ -1,13 +1,42 @@
 # Glossary — <APPLICATION_NAME>
 
-Terms an outsider would misread. Only include terms where the local meaning differs from
-the obvious one; a glossary of general software terms is noise.
+Domain terminology. Only non-obvious terms; save general tech for Google.
 
-| Term | Means here | Does not mean |
+**Last Updated:** <YYYY-MM-DD>  
+**Owner:** <Domain Expert>
+
+---
+
+## Business Terms
+
+| Term | Means Here | Does NOT Mean |
 |---|---|---|
-| <term> | <local meaning> | <the reading to avoid> |
+| <term> | <local meaning> | <reading to avoid> |
 
-## Overloaded terms
+---
 
-<Where the same word means different things in different parts of the system, say so
-explicitly. This is a common source of confidently wrong answers.>
+## Technical Terms
+
+| Term | Means Here | Used In |
+|---|---|---|
+| <term> | <definition> | <component> |
+
+---
+
+## Acronyms
+
+| Acronym | Meaning | Used In |
+|---|---|---|
+| <acronym> | <expansion> | <component> |
+
+---
+
+## Overloaded Terms
+
+<When same word means different things in different parts of system>
+
+---
+
+## Full Specifications
+
+See `docs/specs/` for domain details.

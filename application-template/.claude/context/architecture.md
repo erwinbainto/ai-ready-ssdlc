@@ -1,37 +1,64 @@
 # Architecture — <APPLICATION_NAME>
 
-The knowledge connection. Authored with the team that owns this application; drafted by the
-`explorer` role, then corrected by a human. A draft nobody corrected is worse than nothing,
-because it reads as authoritative.
+**Last Updated:** <YYYY-MM-DD>  
+**Owner:** <Tech Lead>  
+**Full Details:** `docs/architecture/ARCHITECTURE.md`
+
+---
 
 ## What it is
 
-<Business purpose, one paragraph.>
+<One paragraph: business purpose, users, value>
+
+---
 
 ## How it fits
 
-<Upstream and downstream systems. What calls it, what it calls.>
+<Who calls this app, who does it call>
+
+---
 
 ## Internal structure
 
-<Key components and their responsibilities.>
+| Component | Technology | Responsibility |
+|---|---|---|
+| <name> | <tech stack> | <what it does> |
+
+---
 
 ## Interfaces
 
-| Interface | Type | Consumers | Contract location |
+| Interface | Type | Consumers | Details |
 |---|---|---|---|
-| <name> | <REST / queue / batch> | <who> | `<path>` |
+| <endpoint/event> | <REST/Queue/Batch> | <who> | `docs/<path>` |
 
-## Data and state
+---
 
-<What it owns, what it reads, where state lives.>
+## Key Decisions
 
-## Decisions worth knowing
+| Area | Chosen | Why | Record |
+|---|---|---|---|
+| <decision> | <chosen> | <reason> | `docs/architecture/adr/ADR-*.md` |
 
-<Architecture decisions that explain why the code looks the way it does. Link to records
-where they exist.>
+---
 
-## Unowned or unclear
+## Data & State
 
-<Components whose owner or purpose nobody could confirm. Name them. This list is a genuine
-finding, not a failure of the exercise.>
+| Data | Owner | Storage | Retention |
+|---|---|---|---|
+| <data type> | <component> | <where> | <how long> |
+
+---
+
+## Unowned or Unclear
+
+- <component>: <owner/status>
+  - Full details: `docs/architecture/UNCLEAR.md`
+
+---
+
+## References
+
+- Architecture Deep Dive: `docs/architecture/ARCHITECTURE.md`
+- Architectural Decisions: `docs/architecture/adr/`
+- API Specification: `docs/api/`
