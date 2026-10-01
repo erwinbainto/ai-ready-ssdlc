@@ -36,7 +36,12 @@ Copy this directory into each application repository and complete it per the che
 │   │   └── [lifecycle-hooks]        # session-start, pre-tool-use, etc.
 │   │
 │   ├── agents/                      # App-specific agent roles (usually empty)
-│   └── skills/                      # App-specific skills (usually empty)
+│   ├── skills/                      # App-specific skills (usually empty)
+│   └── (evals/ reserved below)      # ↓
+│
+├── evals/                           # [FUTURE] Skill validation gates (WP2/D11)
+│   ├── README.md                    # When and how to use evals for skill publication
+│   └── [empty until skills ready]   # Each skill gets: <skill-name>/prompt.md + graders.md
 │
 └── docs/
     ├── architecture/
@@ -134,6 +139,13 @@ Copy this directory into each application repository and complete it per the che
   - Capture the refusal message (proves read-only boundary holds)
   - Save as evidence: `docs/audits/write-boundary-test-v1.md`
 - [ ] **Team sign-off:** Dev lead + security lead confirm setup
+
+### Phase 6: Future Skills (WP2/D11)
+
+- [ ] **Reserve `evals/` directory** — already created, empty until skills are ready
+  - When you author app-specific skills in `.claude/skills/`, you'll validate them here
+  - See `evals/README.md` for the publication pattern
+  - For now, this phase is blocked on "Capability candidates" logging (Phase 7 monitoring)
 
 ---
 
@@ -298,9 +310,11 @@ Audit Requirements: All PHI access logged to immutable SIEM
 ## Related Documentation
 
 - **Enterprise Set:** `@enterprise/` — organization-wide policies, agents, skills, rules
+- **Enterprise Evals:** `@enterprise/evals/` — example skill validation suites (vuln-patch-triage, etc.)
 - **Deployment Guide:** `../DEPLOYMENT_GUIDE.md` — step-by-step deployment procedures
 - **Verification:** `../VERIFY.md` — post-deployment verification checklist
 - **Forms:** `../D4_*_Form.md` — questionnaires that drive harness generation
+- **Application Evals:** `evals/README.md` — when to create skill evaluation suites (WP2/D11 phase)
 
 ---
 
@@ -313,6 +327,8 @@ Audit Requirements: All PHI access logged to immutable SIEM
 | How do hooks work? | See `.claude/hooks/README.md` |
 | How do I document compliance? | See `docs/security/README.md` |
 | What's the deployment process? | See `../DEPLOYMENT_GUIDE.md` |
+| When do I use evals? | See `evals/README.md` (future phase: WP2/D11 skill publication) |
+| How do I publish a skill? | See `evals/README.md` + `D4_Application_Harness_Form.md` § 7 |
 
 ---
 
