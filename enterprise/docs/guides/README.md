@@ -206,7 +206,7 @@ How to define, approve, and bind MCP servers.
 
 - **Quick Start:** `../../QUICK_START.md` — One-page command sequence
 - **Deployment Guide:** `../../DEPLOYMENT_GUIDE.md` — Full procedures
-- **Harness Guide:** `../../HARNESS_GUIDE.md` — Architecture overview
+- **Harness Guide:** `./ai-ready-ssdlc-harness_guide.md` — Architecture overview (this folder)
 - **Enterprise Form:** `../../D4_Enterprise_Harness_Form.md` — Configuration form
 - **Verification:** `../../VERIFY.md` — Post-deployment checks
 
