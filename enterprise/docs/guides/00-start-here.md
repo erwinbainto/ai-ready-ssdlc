@@ -2,7 +2,7 @@
 
 **Complete documentation for the AI-Ready SSDLC Harness (Enterprise Layer)**
 
-14 comprehensive guides covering setup, deployment, forms, and examples.
+16 comprehensive guides covering readiness, setup, deployment, forms, and examples.
 
 ---
 
@@ -20,6 +20,10 @@
    - Task-based routing
 
 ### 📚 Full Documentation
+
+**Pre-Deployment & Approval (2 guides):**
+- `pre-deployment-readiness.md` (250+ lines) — Readiness checklist (complete BEFORE starting)
+- `deployment-sign-off.md` (300+ lines) — Sign-off form & governance approval
 
 **Setup & Deployment (4 guides):**
 - `setup.md` (401 lines) — How to complete enterprise form sections 0-11
@@ -49,10 +53,12 @@
 ### Technical Lead (Setting up enterprise)
 
 **In order:**
-1. `quick-start.md` — Get oriented
-2. `setup.md` — Complete enterprise form
-3. `deployment.md` — Deploy to machines
-4. `example-completed-enterprise-form.md` — See what a completed form looks like
+1. `pre-deployment-readiness.md` — Verify readiness BEFORE starting (critical)
+2. `quick-start.md` — Get oriented
+3. `setup.md` — Complete enterprise form
+4. `deployment.md` — Deploy to machines
+5. `deployment-sign-off.md` — Record approvals & evidence
+6. `example-completed-enterprise-form.md` — See what a completed form looks like
 
 **Reference:**
 - `architecture.md` — Understand structure
@@ -114,10 +120,12 @@
 ## Common Tasks
 
 ### "How do I set up enterprise?"
-1. Read `quick-start.md`
-2. Read `setup.md` (form sections 0-11)
-3. Read `deployment.md`
-4. Reference `example-completed-enterprise-form.md`
+1. **Start here:** `pre-deployment-readiness.md` (verify readiness FIRST)
+2. Read `quick-start.md`
+3. Read `setup.md` (form sections 0-11)
+4. Read `deployment.md`
+5. **Record approvals:** `deployment-sign-off.md`
+6. Reference `example-completed-enterprise-form.md`
 
 ### "How do I set up an application?"
 1. Read `quick-start.md`
