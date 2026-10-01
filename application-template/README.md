@@ -85,7 +85,7 @@ Copy this directory into each application repository and complete it per the che
 - [ ] **Rename placeholders:**
   - `<APPLICATION_NAME>` → actual app name (in `.claude/context/`, `docs/`, `CLAUDE.md`)
   - `<STACK>` → languages/frameworks in use (Java, Node.js, React, etc.)
-- [ ] **Review and complete** `.claude/context/README.md` — instructions for completing knowledge base
+- [ ] **Review and complete** `docs/guides/context/README.md` — instructions for completing knowledge base
 - [ ] **Author** `.claude/context/architecture.md` with tech lead (cannot be templated)
 
 ### Phase 2: Security & Compliance
@@ -111,7 +111,7 @@ Copy this directory into each application repository and complete it per the che
 
 ### Phase 3: Rules & Conventions
 
-- [ ] **Read** `.claude/rules/README.md` — guidelines for app-specific rules
+- [ ] **Read** `docs/guides/rules/README.md` — guidelines for app-specific rules
 - [ ] **Customize** `.claude/rules/10-app.md` with team conventions
 - [ ] **Review** `.claude/context/hazards.md` — document known fragile areas
   - Security hazards (high-risk code paths)
@@ -121,7 +121,7 @@ Copy this directory into each application repository and complete it per the che
 ### Phase 4: Integration
 
 - [ ] **Configure hooks** in `.claude/hooks/` and wire in `settings.json`
-  - Read `.claude/hooks/README.md` for hook lifecycle
+  - Read `docs/guides/hooks/README.md` for hook lifecycle
   - Copy/create hooks from enterprise set as needed
 - [ ] **Bind MCP servers** in `.mcp.json` (admitted catalogue only)
 - [ ] **Narrow permissions** in `.claude/settings.json`
@@ -322,9 +322,9 @@ Audit Requirements: All PHI access logged to immutable SIEM
 
 | Question | Reference |
 |---|---|
-| How do I complete `.claude/context/`? | See `.claude/context/README.md` |
-| What security rules should I add? | See `.claude/rules/README.md` |
-| How do hooks work? | See `.claude/hooks/README.md` |
+| How do I complete `.claude/context/`? | See `docs/guides/context/README.md` |
+| What security rules should I add? | See `docs/guides/rules/README.md` |
+| How do hooks work? | See `docs/guides/hooks/README.md` |
 | How do I document compliance? | See `docs/security/README.md` |
 | What's the deployment process? | See `../DEPLOYMENT_GUIDE.md` |
 | When do I use evals? | See `evals/README.md` (future phase: WP2/D11 skill publication) |
