@@ -521,8 +521,8 @@ Update the enterprise form when:
 
 ## Related Documentation
 
-- `DEPLOYMENT_GUIDE.md` — Phase 1: Enterprise setup (do ONCE)
-- `ENTERPRISE_VS_APPLICATION.md` — What's shared vs. unique
+- `deployment-guide.md` — Phase 1: Enterprise setup (do ONCE)
+- `enterprise-vs-application.md` — What's shared vs. unique
 - `D4_Enterprise_Harness_Form.md` — The form itself
 - `D4_Application_Harness_Form.md` — Per-app form (cites enterprise version)
 

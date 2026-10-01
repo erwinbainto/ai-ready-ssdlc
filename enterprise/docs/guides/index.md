@@ -26,7 +26,7 @@ In this order:
    - Shows the flow and architecture
    - Open in your browser
 
-3. **`USAGE.md`** (9.1 KB)
+3. **`usage.md`** (9.1 KB)
    - Quick reference
    - TL;DR: the fastest path
    - Common workflows
@@ -45,7 +45,7 @@ In this order:
   - How to run genbrief.py
   - Key constraints and best practices
 
-- **`FORMS_AND_AUTOMATION.md`** (14 KB)
+- **`forms-and-automation.md`** (14 KB)
   - Detailed guide to the forms workflow
   - Section-by-section walkthrough
   - genbrief.py explained
@@ -376,7 +376,7 @@ This is the only proof that enforcement is real.
 
 1. Open `D4_How_To.html` in your browser (visual walkthrough)
 2. Read `README.md` (overview)
-3. Read `USAGE.md` TL;DR section (fastest path)
+3. Read `usage.md` TL;DR section (fastest path)
 4. Open `D4_Enterprise_Harness_Form.md`
 5. Answer section 0 first (gating decisions)
 6. Follow GENERATE and VERIFY steps
@@ -385,7 +385,7 @@ This is the only proof that enforcement is real.
 
 1. Wait for enterprise plugin version to be published
 2. Read `D4_How_To.html` (visual walkthrough)
-3. Read `USAGE.md` "I'm configuring an application" section
+3. Read `usage.md` "I'm configuring an application" section
 4. Open `D4_Application_Harness_Form.md`
 5. Fill section 0, cite enterprise version
 6. Use `explorer` agent to draft section 2 (knowledge connection)

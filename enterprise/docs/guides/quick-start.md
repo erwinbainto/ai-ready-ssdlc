@@ -193,7 +193,7 @@ git push origin main
 |---|---|
 | `D4_Enterprise_Harness_Form.md` | Enterprise configuration (Phase 1) |
 | `D4_Application_Harness_Form.md` | App configuration (Phase 2) |
-| `DEPLOYMENT_GUIDE.md` | Full step-by-step procedures |
+| `deployment-guide.md` | Full step-by-step procedures |
 | `enterprise/docs/guides/ai-ready-ssdlc-harness_guide.md` | Architecture & understanding |
 | `VERIFY.md` | Verification checklist |
 | `enterprise/` | Enterprise plugin files |
@@ -219,6 +219,6 @@ git push origin main
 
 **Ready?** Start with `D4_Enterprise_Harness_Form.md` section 0.
 
-**Need detail?** Read `DEPLOYMENT_GUIDE.md`.
+**Need detail?** Read `deployment-guide.md`.
 
 **Need to understand?** Read `enterprise/docs/guides/ai-ready-ssdlc-harness_guide.md`.

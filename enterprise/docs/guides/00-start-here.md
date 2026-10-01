@@ -10,7 +10,7 @@
 
 ### 🚀 Just Getting Started?
 
-1. **Read this first:** `QUICK_START.md` (224 lines)
+1. **Read this first:** `quick-start.md` (224 lines)
    - One-page command sequence
    - Phases 1-4 overview
    - Common issues
@@ -25,22 +25,22 @@
 - `setup.md` (401 lines) — How to complete enterprise form sections 0-11
 - `deployment.md` (393 lines) — Deployment procedures (Route A & B)
 - `architecture.md` (534 lines) — Enterprise folder structure explained
-- `DEPLOYMENT_GUIDE.md` (1,029 lines) — Complete deployment procedures with all phases
+- `deployment-guide.md` (1,029 lines) — Complete deployment procedures with all phases
 
 **Understanding & Reference (5 guides):**
-- `ai-ready-ssdlc-harness_guide.md` (754 lines) — Complete architecture overview
-- `ENTERPRISE_VS_APPLICATION.md` (931 lines) — How enterprise and app harnesses differ
-- `ENTERPRISE_FORM_REUSABILITY.md` (531 lines) — Form reusability patterns
-- `INDEX.md` (468 lines) — Master index of all documents
-- `USAGE.md` (362 lines) — Usage patterns and workflows
+- `ai-ready-ssdlc-harness-guide.md` (754 lines) — Complete architecture overview
+- `enterprise-vs-application.md` (931 lines) — How enterprise and app harnesses differ
+- `enterprise-form-reusability.md` (531 lines) — Form reusability patterns
+- `index.md` (468 lines) — Master index of all documents
+- `usage.md` (362 lines) — Usage patterns and workflows
 
 **How-To Guides (2 guides):**
-- `FORMS_AND_AUTOMATION.md` (333 lines) — Working with forms
+- `forms-and-automation.md` (333 lines) — Working with forms
 - (Others as needed)
 
 **Examples (2 guides):**
-- `EXAMPLE_COMPLETED_ENTERPRISE_FORM.md` (520 lines) — Filled-out enterprise form example
-- `EXAMPLE_COMPLETED_APPLICATION_FORM.md` (480 lines) — Filled-out application form example
+- `example-completed-enterprise-form.md` (520 lines) — Filled-out enterprise form example
+- `example-completed-application-form.md` (480 lines) — Filled-out application form example
 
 ---
 
@@ -49,40 +49,40 @@
 ### Technical Lead (Setting up enterprise)
 
 **In order:**
-1. `QUICK_START.md` — Get oriented
+1. `quick-start.md` — Get oriented
 2. `setup.md` — Complete enterprise form
 3. `deployment.md` — Deploy to machines
-4. `EXAMPLE_COMPLETED_ENTERPRISE_FORM.md` — See what a completed form looks like
+4. `example-completed-enterprise-form.md` — See what a completed form looks like
 
 **Reference:**
 - `architecture.md` — Understand structure
-- `ai-ready-ssdlc-harness_guide.md` — Deep dive into architecture
+- `ai-ready-ssdlc-harness-guide.md` — Deep dive into architecture
 
 ### Dev Lead (Setting up applications)
 
 **In order:**
-1. `QUICK_START.md` — Get oriented
-2. `ENTERPRISE_VS_APPLICATION.md` — Understand differences
-3. Check `EXAMPLE_COMPLETED_APPLICATION_FORM.md` — See completed example
-4. `DEPLOYMENT_GUIDE.md` Phase 2 — Deploy your app
+1. `quick-start.md` — Get oriented
+2. `enterprise-vs-application.md` — Understand differences
+3. Check `example-completed-application-form.md` — See completed example
+4. `deployment-guide.md` Phase 2 — Deploy your app
 
 **Reference:**
-- `ai-ready-ssdlc-harness_guide.md` — How enterprise works
-- `ENTERPRISE_FORM_REUSABILITY.md` — How to customize
+- `ai-ready-ssdlc-harness-guide.md` — How enterprise works
+- `enterprise-form-reusability.md` — How to customize
 
 ### Security Team (Reviewing policies)
 
 **In order:**
 1. `architecture.md` — Understand structure
-2. `ENTERPRISE_VS_APPLICATION.md` — Policy inheritance model
-3. `EXAMPLE_COMPLETED_ENTERPRISE_FORM.md` — See policies in context
+2. `enterprise-vs-application.md` — Policy inheritance model
+3. `example-completed-enterprise-form.md` — See policies in context
 
 ### DevOps (Deploying to fleet)
 
 **In order:**
-1. `QUICK_START.md` — Get oriented
+1. `quick-start.md` — Get oriented
 2. `deployment.md` — Deployment procedures
-3. `DEPLOYMENT_GUIDE.md` Phase 1 — Full procedures
+3. `deployment-guide.md` Phase 1 — Full procedures
 4. `architecture.md` — Understand what's being deployed
 
 ---
@@ -114,30 +114,30 @@
 ## Common Tasks
 
 ### "How do I set up enterprise?"
-1. Read `QUICK_START.md`
+1. Read `quick-start.md`
 2. Read `setup.md` (form sections 0-11)
 3. Read `deployment.md`
-4. Reference `EXAMPLE_COMPLETED_ENTERPRISE_FORM.md`
+4. Reference `example-completed-enterprise-form.md`
 
 ### "How do I set up an application?"
-1. Read `QUICK_START.md`
-2. Read `ENTERPRISE_VS_APPLICATION.md`
-3. Reference `EXAMPLE_COMPLETED_APPLICATION_FORM.md`
-4. See `DEPLOYMENT_GUIDE.md` Phase 2
+1. Read `quick-start.md`
+2. Read `enterprise-vs-application.md`
+3. Reference `example-completed-application-form.md`
+4. See `deployment-guide.md` Phase 2
 
 ### "I need to understand the architecture"
 1. Read `architecture.md` (30 min)
-2. Read `ai-ready-ssdlc-harness_guide.md` (60 min)
-3. Read `ENTERPRISE_VS_APPLICATION.md` (45 min)
+2. Read `ai-ready-ssdlc-harness-guide.md` (60 min)
+3. Read `enterprise-vs-application.md` (45 min)
 
 ### "Something's broken"
-1. Check `DEPLOYMENT_GUIDE.md` troubleshooting section
+1. Check `deployment-guide.md` troubleshooting section
 2. Check `deployment.md` troubleshooting section
 3. Escalate with information from guide
 
 ### "I want to see a completed example"
-1. `EXAMPLE_COMPLETED_ENTERPRISE_FORM.md` (enterprise setup)
-2. `EXAMPLE_COMPLETED_APPLICATION_FORM.md` (app setup)
+1. `example-completed-enterprise-form.md` (enterprise setup)
+2. `example-completed-application-form.md` (app setup)
 
 ---
 
@@ -180,14 +180,14 @@ enterprise/docs/guides/
 
 **For complete understanding (4-5 hours):**
 
-1. `QUICK_START.md` (15 min) — Get oriented
+1. `quick-start.md` (15 min) — Get oriented
 2. `README.md` (10 min) — Navigation overview
 3. `architecture.md` (30 min) — How enterprise works
-4. `ai-ready-ssdlc-harness_guide.md` (60 min) — Deep architecture
+4. `ai-ready-ssdlc-harness-guide.md` (60 min) — Deep architecture
 5. `setup.md` (30 min) — How to complete form
 6. `deployment.md` (30 min) — How to deploy
-7. `ENTERPRISE_VS_APPLICATION.md` (45 min) — Policy model
-8. `EXAMPLE_COMPLETED_ENTERPRISE_FORM.md` (20 min) — See working example
+7. `enterprise-vs-application.md` (45 min) — Policy model
+8. `example-completed-enterprise-form.md` (20 min) — See working example
 
 ---
 
@@ -196,20 +196,20 @@ enterprise/docs/guides/
 ### Best Practices
 
 ✅ **DO:**
-- Start with `QUICK_START.md` (always)
+- Start with `quick-start.md` (always)
 - Use `README.md` for navigation
 - Refer to examples while filling forms
-- Bookmark `DEPLOYMENT_GUIDE.md` for troubleshooting
+- Bookmark `deployment-guide.md` for troubleshooting
 
 ❌ **DON'T:**
-- Start with `DEPLOYMENT_GUIDE.md` (too much detail initially)
-- Skip `QUICK_START.md`
+- Start with `deployment-guide.md` (too much detail initially)
+- Skip `quick-start.md`
 - Try to memorize everything (reference as needed)
 - Work without opening examples alongside
 
 ### Printing
 
-- **Quick reference:** Print `QUICK_START.md` + `README.md`
+- **Quick reference:** Print `quick-start.md` + `README.md`
 - **Setup:** Print `setup.md` + `deployment.md`
 - **Complete guide:** Print entire guides folder (7,234 lines ≈ 40-50 pages)
 
@@ -217,10 +217,10 @@ enterprise/docs/guides/
 
 ## Next Steps
 
-1. **Read:** `QUICK_START.md` (this takes 15 minutes)
+1. **Read:** `quick-start.md` (this takes 15 minutes)
 2. **Navigate:** Use `README.md` to find what you need
 3. **Reference:** Open examples while working on forms
-4. **Deploy:** Follow `DEPLOYMENT_GUIDE.md` for full procedures
+4. **Deploy:** Follow `deployment-guide.md` for full procedures
 
 ---
 
@@ -233,4 +233,4 @@ enterprise/docs/guides/
 
 ---
 
-**Questions?** See the appropriate guide for your task, or check `INDEX.md` for a master reference.
+**Questions?** See the appropriate guide for your task, or check `index.md` for a master reference.

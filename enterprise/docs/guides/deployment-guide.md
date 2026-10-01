@@ -994,10 +994,10 @@ Week 6-7: App 2 Setup
 ## Related Documentation
 
 - `README.md` — Project overview
-- `USAGE.md` — Quick reference and TL;DR
-- `FORMS_AND_AUTOMATION.md` — Detailed forms guide
+- `usage.md` — Quick reference and TL;DR
+- `forms-and-automation.md` — Detailed forms guide
 - `VERIFY.md` — Verification checklist
-- `INDEX.md` — Complete project index
+- `index.md` — Complete project index
 - `D4_How_To.html` — Visual guide (open in browser)
 
 ---

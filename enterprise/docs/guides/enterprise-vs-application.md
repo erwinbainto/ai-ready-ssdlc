@@ -924,8 +924,8 @@ Narrowing-only constraint ensures:
 
 ## Related Files
 
-- `DEPLOYMENT_GUIDE.md` — Step-by-step for both phases
+- `deployment-guide.md` — Step-by-step for both phases
 - `D4_Enterprise_Harness_Form.md` — The enterprise form
 - `D4_Application_Harness_Form.md` — The application form
-- `USAGE.md` — Quick reference
-- `INDEX.md` — Project reference
+- `usage.md` — Quick reference
+- `index.md` — Project reference

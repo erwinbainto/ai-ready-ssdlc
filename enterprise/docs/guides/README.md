@@ -204,9 +204,9 @@ How to define, approve, and bind MCP servers.
 
 ## Related Documentation
 
-- **Quick Start:** `../../QUICK_START.md` — One-page command sequence
-- **Deployment Guide:** `../../DEPLOYMENT_GUIDE.md` — Full procedures
-- **Harness Guide:** `./ai-ready-ssdlc-harness_guide.md` — Architecture overview (this folder)
+- **Quick Start:** `../../quick-start.md` — One-page command sequence
+- **Deployment Guide:** `../../deployment-guide.md` — Full procedures
+- **Harness Guide:** `./ai-ready-ssdlc-harness-guide.md` — Architecture overview (this folder)
 - **Enterprise Form:** `../../D4_Enterprise_Harness_Form.md` — Configuration form
 - **Verification:** `../../VERIFY.md` — Post-deployment checks
 
@@ -265,7 +265,7 @@ enterprise/
 1. **Start with the task, not the alphabet.** Use "When to Use" table above.
 2. **Reference, not copy.** These guides reference the enterprise form and files; don't duplicate them.
 3. **Keep guides current.** If the form changes, update relevant guides.
-4. **Link to DEPLOYMENT_GUIDE.md for full procedures.** These guides are deep dives; the deployment guide has the overview.
+4. **Link to deployment-guide.md for full procedures.** These guides are deep dives; the deployment guide has the overview.
 
 ---
 

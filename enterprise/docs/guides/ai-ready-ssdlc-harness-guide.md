@@ -701,7 +701,7 @@ Edit src/app.py  # Should be allowed
 | File | Purpose |
 |---|---|
 | `README.md` | Enterprise & app intro |
-| `DEPLOYMENT_GUIDE.md` | Step-by-step deployment |
+| `deployment-guide.md` | Step-by-step deployment |
 | `VERIFY.md` | Post-deployment checklist |
 | `D4_Enterprise_Harness_Form.md` | Enterprise configuration form |
 | `D4_Application_Harness_Form.md` | App configuration form |

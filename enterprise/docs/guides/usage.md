@@ -331,8 +331,8 @@ make test               # Baseline should pass
 | `README.md` | Overview and deployment order |
 | `CLAUDE.md` | Guidance for this project |
 | `VERIFY.md` | Post-deployment verification checklist |
-| `FORMS_AND_AUTOMATION.md` | Detailed guide (you're reading this) |
-| `USAGE.md` | Quick reference (this file) |
+| `forms-and-automation.md` | Detailed guide (you're reading this) |
+| `usage.md` | Quick reference (this file) |
 | `D4_Enterprise_Harness_Form.md` | Enterprise questionnaire |
 | `D4_Application_Harness_Form.md` | Application questionnaire |
 | `D4_How_To.html` | Visual guide (open in browser) |
