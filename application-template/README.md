@@ -4,6 +4,8 @@
 
 Copy this directory into each application repository and complete it per the checklists below. One copy per application.
 
+> **🚀 Getting Started:** Before using this template, read `docs/guides/developer-setup-guide.md` for a complete step-by-step walkthrough. It covers everything in this README with real examples and troubleshooting.
+
 ---
 
 ## Directory Structure
@@ -62,7 +64,13 @@ Copy this directory into each application repository and complete it per the che
     │   └── README.md
     │
     ├── guides/
-    │   └── README.md
+    │   ├── README.md                # Navigation hub for all guides
+    │   ├── 00-START-HERE.md         # [NEW] Entry point with reading order
+    │   ├── developer-setup-guide.md # [NEW] Step-by-step setup walkthrough
+    │   ├── getting-started-sample.md # Complete example
+    │   ├── context/README.md        # How to complete context files
+    │   ├── rules/README.md          # How to create app-specific rules
+    │   └── hooks/README.md          # How to wire lifecycle hooks
     │
     ├── testing/
     │   └── README.md
@@ -84,6 +92,7 @@ Copy this directory into each application repository and complete it per the che
 
 ### Phase 1: Essentials (Complete First)
 
+- [ ] **Read first:** `docs/guides/developer-setup-guide.md` — complete walkthrough of setup process
 - [ ] **Record enterprise plugin version** in `.claude/settings.json` → `enterpriseVersion: "x.y.z"`
 - [ ] **Copy this directory** to app repo root
 - [ ] **Rename placeholders:**
@@ -341,6 +350,17 @@ Audit Requirements: All PHI access logged to immutable SIEM
 
 ---
 
-**Last Updated:** 2026-10-01  
-**Version:** 1.0  
+**Last Updated:** 2026-10-02  
+**Version:** 1.1  
 **Maintained by:** Platform / Security Team
+
+---
+
+## What's New (v1.1)
+
+- ✨ Added comprehensive `developer-setup-guide.md` with step-by-step walkthrough
+- ✨ Added `docs/guides/00-START-HERE.md` for navigation and reading order
+- 🗂️ Organized deployment forms into `docs/forms/` directory
+- 📝 Updated guides section with complete file listing
+- 🔗 Added cross-references throughout README
+- ✅ Fixed documentation reference paths (now consistent across all guides)
