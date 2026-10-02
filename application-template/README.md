@@ -313,6 +313,8 @@ Audit Requirements: All PHI access logged to immutable SIEM
 
 ## Related Documentation
 
+- **Developer Setup Guide:** `docs/guides/developer-setup-guide.md` — complete step-by-step setup for new teams
+- **Getting Started:** `docs/guides/00-start-here.md` — navigation and reading order for all guides
 - **Deployment Form:** `docs/forms/D4_Application_Harness_Form.md` — questionnaire for this application (completed once per app)
 - **Deployment Guide:** `../DEPLOYMENT_GUIDE.md` — step-by-step deployment procedures
 - **Verification:** `../VERIFY.md` — post-deployment verification checklist
@@ -327,6 +329,7 @@ Audit Requirements: All PHI access logged to immutable SIEM
 
 | Question | Reference |
 |---|---|
+| I'm new, where do I start? | See `docs/guides/developer-setup-guide.md` (complete setup walkthrough) |
 | How do I deploy this harness? | See `docs/forms/D4_Application_Harness_Form.md` (deployment questionnaire) |
 | How do I complete `.claude/context/`? | See `docs/guides/context/README.md` |
 | What security rules should I add? | See `docs/guides/rules/README.md` |

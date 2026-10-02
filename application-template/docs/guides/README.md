@@ -8,8 +8,18 @@ This folder contains how-to guides, tutorials, and learning materials for workin
 
 ### Getting Started
 
-- **`getting-started.md`** — Entry point for new team members
+- **`developer-setup-guide.md`** — Complete step-by-step setup from scratch
+  - AI SSDLC harness introduction and concepts
+  - Project structure and directory organization
+  - `.claude/` folder configuration (context, rules, hooks)
+  - Step-by-step walkthrough for each component
+  - Stack-specific examples and patterns
+  - Common tasks and troubleshooting
+  - **Read this first if you're new to the project**
+
+- **`getting-started-sample.md`** — Entry point for new team members
   - Project overview and architecture bird's-eye view
+  - Complete example with all sections filled out
   - Local development environment setup (prerequisites, IDE configuration)
   - Running the application locally (build commands, dev server startup)
   - Verifying your setup (smoke tests, "hello world" walkthrough)

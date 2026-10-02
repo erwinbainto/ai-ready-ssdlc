@@ -10,22 +10,28 @@
 
 ### 🚀 Just Getting Started?
 
-1. **Read this first:** `getting-started-sample.md` (561 lines)
+1. **Read this first:** `developer-setup-guide.md` (~900 lines)
+   - Complete step-by-step setup from scratch
+   - How to configure `.claude/` folder
+   - Real-world examples for your tech stack
+
+2. **Then read:** `getting-started-sample.md` (561 lines)
    - Complete example walkthrough
    - How to fill out each section
-   - Real-world patterns
+   - Reference patterns
 
-2. **Then read:** `README.md` (301 lines)
+3. **Reference guide:** `README.md` (301 lines)
    - Navigation hub for all guides
    - Task-based routing
 
 ### 📚 Full Documentation
 
-**Core Guides (4 guides):**
+**Setup & Learning (5 guides):**
+- `developer-setup-guide.md` (~900 lines) — Complete step-by-step setup walkthrough
+- `getting-started-sample.md` (561 lines) — Complete example with all sections
 - `context/README.md` (283 lines) — How to complete `.claude/context/` files
 - `rules/README.md` (373 lines) — How to create app-specific rules
 - `hooks/README.md` (349 lines) — How to wire lifecycle hooks
-- `getting-started-sample.md` (561 lines) — Complete example walkthrough
 
 **Navigation:**
 - `README.md` (301 lines) — Master navigation hub
@@ -37,10 +43,11 @@
 ### Dev Lead (Setting up this application)
 
 **In order:**
-1. `getting-started-sample.md` — See complete example
-2. `context/README.md` — Complete architecture, commands, glossary, hazards
-3. `rules/README.md` — Create app-specific rules
-4. `hooks/README.md` — Wire lifecycle automation
+1. `developer-setup-guide.md` — Step-by-step setup from scratch
+2. `getting-started-sample.md` — See complete example
+3. `context/README.md` — Complete architecture, commands, glossary, hazards
+4. `rules/README.md` — Create app-specific rules
+5. `hooks/README.md` — Wire lifecycle automation
 
 **Reference:**
 - `README.md` — Task-based lookup
@@ -77,12 +84,13 @@
 |---|---|---|---|
 | **00-START-HERE.md** | — | This file | Everyone |
 | **README.md** | 301 | Navigation hub | Everyone |
+| **developer-setup-guide.md** | ~900 | Complete step-by-step setup | Dev leads, new teams |
 | **getting-started-sample.md** | 561 | Complete example | Dev leads |
 | **context/README.md** | 283 | Context completion | Dev leads |
 | **rules/README.md** | 373 | Rules creation | Dev leads |
 | **hooks/README.md** | 349 | Hooks wiring | DevOps |
 
-**Total: 1,867 lines**
+**Total: ~2,767 lines**
 
 ---
 
@@ -125,9 +133,10 @@ application-template/docs/guides/
 🆕 00-START-HERE.md (this file)
    └─ Navigation & task routing
 
-📍 Navigation & Examples
-  ├─ README.md (hub)
-  └─ getting-started-sample.md (complete example)
+📍 Setup & Learning
+  ├─ developer-setup-guide.md (step-by-step from scratch)
+  ├─ getting-started-sample.md (complete example)
+  └─ README.md (navigation hub)
 
 📚 Core Guides
   ├─ context/README.md (architecture, commands, glossary, hazards)
@@ -139,22 +148,39 @@ application-template/docs/guides/
 
 ## Recommended Reading Order (Complete)
 
-**For new dev leads (2-3 hours):**
+**For new dev leads (3-4 hours):**
 
-1. `getting-started-sample.md` (30 min) — See the big picture
-2. `context/README.md` (30 min) — How to complete context files
-3. `rules/README.md` (30 min) — How to create rules
-4. `hooks/README.md` (30 min) — How to configure hooks
-5. `README.md` (10 min) — Understand navigation
+1. `developer-setup-guide.md` (60 min) — Complete step-by-step setup
+2. `getting-started-sample.md` (30 min) — See the big picture and examples
+3. `context/README.md` (30 min) — How to complete context files
+4. `rules/README.md` (30 min) — How to create rules
+5. `hooks/README.md` (30 min) — How to configure hooks
+6. `README.md` (10 min) — Understand navigation
 
 **For team members (30 minutes):**
 
-1. `getting-started-sample.md` (20 min) — Get oriented
-2. `README.md` (10 min) — Know where to find things
+1. `developer-setup-guide.md` (15 min) — Quick orientation to project setup
+2. `getting-started-sample.md` (10 min) — Get oriented
+3. `README.md` (5 min) — Know where to find things
 
 ---
 
 ## What Each Guide Covers
+
+### `developer-setup-guide.md`
+
+**Complete step-by-step setup guide with:**
+- Project overview and AI SSDLC harness introduction
+- Directory structure and file organization
+- `.claude/` folder configuration walkthrough
+- Context files (architecture, commands, glossary, hazards, security-posture)
+- Rules and guardrails for your tech stack
+- Hooks and lifecycle automation setup
+- Evals and custom skills validation
+- Common tasks and workflows
+- Troubleshooting and next steps
+
+**Use this:** First thing you read. Walks you through setup from start to finish.
 
 ### `getting-started-sample.md`
 
@@ -265,9 +291,9 @@ application-template/docs/guides/
 ## Document Status
 
 **Created:** 2026-10-01  
-**Last Updated:** 2026-10-01  
-**Total Lines:** 1,867 (5 files)  
-**Status:** Complete reference suite for application setup  
+**Last Updated:** 2026-10-02  
+**Total Lines:** ~2,767 (6 files + subdirectories)  
+**Status:** Complete reference suite for application setup with developer-setup-guide  
 
 ---
 
