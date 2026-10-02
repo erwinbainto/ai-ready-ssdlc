@@ -44,6 +44,10 @@ Copy this directory into each application repository and complete it per the che
 │   └── [empty until skills ready]   # Each skill gets: <skill-name>/prompt.md + graders.md
 │
 └── docs/
+    ├── forms/                       # Deployment questionnaires
+    │   ├── README.md                # Guidance on deployment forms
+    │   └── D4_Application_Harness_Form.md # Application deployment form (fill once per app)
+    │
     ├── architecture/
     │   ├── README.md
     │   └── adr/                     # Architectural Decision Records
@@ -309,12 +313,13 @@ Audit Requirements: All PHI access logged to immutable SIEM
 
 ## Related Documentation
 
-- **Enterprise Set:** `@enterprise/` — organization-wide policies, agents, skills, rules
-- **Enterprise Evals:** `@enterprise/evals/` — example skill validation suites (vuln-patch-triage, etc.)
+- **Deployment Form:** `docs/forms/D4_Application_Harness_Form.md` — questionnaire for this application (completed once per app)
 - **Deployment Guide:** `../DEPLOYMENT_GUIDE.md` — step-by-step deployment procedures
 - **Verification:** `../VERIFY.md` — post-deployment verification checklist
-- **Forms:** `../D4_*_Form.md` — questionnaires that drive harness generation
+- **Enterprise Set:** `@enterprise/` — organization-wide policies, agents, skills, rules
+- **Enterprise Evals:** `@enterprise/evals/` — example skill validation suites (vuln-patch-triage, etc.)
 - **Application Evals:** `evals/README.md` — when to create skill evaluation suites (WP2/D11 phase)
+- **Enterprise Form:** `../D4_Enterprise_Harness_Form.md` — parent harness questionnaire (completed once for all apps)
 
 ---
 
@@ -322,13 +327,14 @@ Audit Requirements: All PHI access logged to immutable SIEM
 
 | Question | Reference |
 |---|---|
+| How do I deploy this harness? | See `docs/forms/D4_Application_Harness_Form.md` (deployment questionnaire) |
 | How do I complete `.claude/context/`? | See `docs/guides/context/README.md` |
 | What security rules should I add? | See `docs/guides/rules/README.md` |
 | How do hooks work? | See `docs/guides/hooks/README.md` |
 | How do I document compliance? | See `docs/security/README.md` |
 | What's the deployment process? | See `../DEPLOYMENT_GUIDE.md` |
 | When do I use evals? | See `evals/README.md` (future phase: WP2/D11 skill publication) |
-| How do I publish a skill? | See `evals/README.md` + `D4_Application_Harness_Form.md` § 7 |
+| How do I publish a skill? | See `evals/README.md` + `docs/forms/D4_Application_Harness_Form.md` § 7 |
 
 ---
 
