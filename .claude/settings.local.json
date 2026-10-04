@@ -7,7 +7,11 @@
       "Bash(git ls-tree *)",
       "Bash(git remote *)",
       "Bash(git push *)",
-      "Bash(grep -E \"^[a-z-]+$\")"
+      "Bash(grep -E \"^[a-z-]+$\")",
+      "Bash(xargs ls -lh)",
+      "Bash(claude plugin *)",
+      "Bash(cat)",
+      "Read(//tmp/**)"
     ]
   }
 }

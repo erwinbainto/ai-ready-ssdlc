@@ -1,0 +1,8 @@
+schema_version: "1.0"
+name: Vulnerability Patch Triage
+description: Evaluate ability to analyze vulnerability tickets and produce actionable patch advisories with reachability evidence
+prompt: prompt.md
+graders:
+  - name: Triage Grader
+    type: llm
+    criteria: graders.md

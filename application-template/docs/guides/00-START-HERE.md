@@ -8,30 +8,47 @@
 
 ## Quick Navigation
 
-### 🚀 Just Getting Started?
+### 🚀 Just Getting Started? (Phase D4: Harness Setup)
 
-1. **Read this first:** `developer-setup-guide.md` (~900 lines)
-   - Complete step-by-step setup from scratch
-   - How to configure `.claude/` folder
-   - Real-world examples for your tech stack
+**Are you setting up the project harness (Claude Code configuration)?**
 
-2. **Then read:** `getting-started-sample.md` (561 lines)
+1. **Start here:** `developer-setup-guide.md` (2,900+ lines)
+   - Complete reference guide for all 8 setup phases
+   - Follow along with Phase 1-8 activity checklist
+   - Examples for every step
+
+2. **Use prompts to complete setup:**
+   - `phase-prompts.md` — Ready-to-copy prompts for each phase
+   - `phase-prompts-interactive.md` — Fill-in-the-blank prompts for customization
+   - **Both recommend appropriate Claude models** (Haiku 4.5 vs. Opus 5.5)
+
+3. **Verify completion:**
+   - `d4-completion-checklist.md` — Full verification checklist
+   - `project-info-lifecycle.md` — What happens to PROJECT_INFO.md
+
+4. **Ready for deployment?**
+   - `d5-deploy-phase.md` — Phase D5 deployment procedures
+
+---
+
+### 📚 Then Getting Into Details?
+
+1. **Read this first:** `getting-started-sample.md` (561 lines)
    - Complete example walkthrough
    - How to fill out each section
-   - Reference patterns
+   - Real-world patterns
 
-3. **Reference guide:** `README.md` (301 lines)
+2. **Then read:** `README.md` (301 lines)
    - Navigation hub for all guides
    - Task-based routing
 
 ### 📚 Full Documentation
 
-**Setup & Learning (5 guides):**
-- `developer-setup-guide.md` (~900 lines) — Complete step-by-step setup walkthrough
-- `getting-started-sample.md` (561 lines) — Complete example with all sections
+**Core Guides (4 guides):**
 - `context/README.md` (283 lines) — How to complete `.claude/context/` files
 - `rules/README.md` (373 lines) — How to create app-specific rules
 - `hooks/README.md` (349 lines) — How to wire lifecycle hooks
+- `getting-started-sample.md` (561 lines) — Complete example walkthrough
 
 **Navigation:**
 - `README.md` (301 lines) — Master navigation hub
@@ -43,11 +60,10 @@
 ### Dev Lead (Setting up this application)
 
 **In order:**
-1. `developer-setup-guide.md` — Step-by-step setup from scratch
-2. `getting-started-sample.md` — See complete example
-3. `context/README.md` — Complete architecture, commands, glossary, hazards
-4. `rules/README.md` — Create app-specific rules
-5. `hooks/README.md` — Wire lifecycle automation
+1. `getting-started-sample.md` — See complete example
+2. `context/README.md` — Complete architecture, commands, glossary, hazards
+3. `rules/README.md` — Create app-specific rules
+4. `hooks/README.md` — Wire lifecycle automation
 
 **Reference:**
 - `README.md` — Task-based lookup
@@ -80,17 +96,29 @@
 
 ## File Directory
 
+### 🆕 Phase D4: Harness Setup (NEW!)
+
+| File | Lines | Purpose | Audience |
+|---|---|---|---|
+| **developer-setup-guide.md** | 2,900+ | Complete setup reference (all 8 phases) | Dev leads, Tech leads |
+| **phase-prompts.md** | 3,600+ | Ready-to-copy prompts for all phases | Busy teams |
+| **phase-prompts-interactive.md** | 2,500+ | Fill-in-the-blank custom prompts | Teams wanting personalization |
+| **d4-completion-checklist.md** | 400+ | Verification checklist before Phase D5 | Tech lead, QA |
+| **project-info-lifecycle.md** | 350+ | What happens to PROJECT_INFO.md | Everyone |
+| **d5-deploy-phase.md** | 500+ | Deployment to staging procedures | DevOps, QA, Tech lead |
+
+### Core Guides
+
 | File | Lines | Purpose | Audience |
 |---|---|---|---|
 | **00-START-HERE.md** | — | This file | Everyone |
 | **README.md** | 301 | Navigation hub | Everyone |
-| **developer-setup-guide.md** | ~900 | Complete step-by-step setup | Dev leads, new teams |
 | **getting-started-sample.md** | 561 | Complete example | Dev leads |
 | **context/README.md** | 283 | Context completion | Dev leads |
 | **rules/README.md** | 373 | Rules creation | Dev leads |
 | **hooks/README.md** | 349 | Hooks wiring | DevOps |
 
-**Total: ~2,767 lines**
+**Total: 11,300+ lines (core + D4 setup)**
 
 ---
 
@@ -128,15 +156,22 @@
 ## Organization Structure
 
 ```
-application-template/docs/guides/
+rrd-ir/docs/guides/
 
 🆕 00-START-HERE.md (this file)
    └─ Navigation & task routing
 
-📍 Setup & Learning
-  ├─ developer-setup-guide.md (step-by-step from scratch)
-  ├─ getting-started-sample.md (complete example)
-  └─ README.md (navigation hub)
+🔧 PHASE D4: HARNESS SETUP (NEW!)
+  ├─ developer-setup-guide.md (complete 8-phase reference)
+  ├─ phase-prompts.md (ready-to-copy prompts)
+  ├─ phase-prompts-interactive.md (fill-in-the-blank prompts)
+  ├─ d4-completion-checklist.md (verification checklist)
+  ├─ project-info-lifecycle.md (PROJECT_INFO.md reference)
+  └─ d5-deploy-phase.md (deployment procedures)
+
+📍 Navigation & Examples
+  ├─ README.md (hub)
+  └─ getting-started-sample.md (complete example)
 
 📚 Core Guides
   ├─ context/README.md (architecture, commands, glossary, hazards)
@@ -148,39 +183,32 @@ application-template/docs/guides/
 
 ## Recommended Reading Order (Complete)
 
-**For new dev leads (3-4 hours):**
+### 🆕 For Setting Up Phase D4 Harness (9-17 hours)
 
-1. `developer-setup-guide.md` (60 min) — Complete step-by-step setup
-2. `getting-started-sample.md` (30 min) — See the big picture and examples
-3. `context/README.md` (30 min) — How to complete context files
-4. `rules/README.md` (30 min) — How to create rules
-5. `hooks/README.md` (30 min) — How to configure hooks
-6. `README.md` (10 min) — Understand navigation
+**Complete setup sequence:**
+
+1. `developer-setup-guide.md` — Read full guide (1 hour)
+2. `phase-prompts.md` OR `phase-prompts-interactive.md` — Choose workflow (30 min)
+3. Follow Phase 1-8 prompts using Claude Code (8-16 hours)
+4. `d4-completion-checklist.md` — Verify completion (1-2 hours)
+5. `d5-deploy-phase.md` — Next phase deployment (reference as needed)
+
+**For new dev leads setting up this application (2-3 hours total after setup):**
+
+1. `getting-started-sample.md` (30 min) — See the big picture
+2. `context/README.md` (30 min) — How to complete context files
+3. `rules/README.md` (30 min) — How to create rules
+4. `hooks/README.md` (30 min) — How to configure hooks
+5. `README.md` (10 min) — Understand navigation
 
 **For team members (30 minutes):**
 
-1. `developer-setup-guide.md` (15 min) — Quick orientation to project setup
-2. `getting-started-sample.md` (10 min) — Get oriented
-3. `README.md` (5 min) — Know where to find things
+1. `getting-started-sample.md` (20 min) — Get oriented
+2. `README.md` (10 min) — Know where to find things
 
 ---
 
 ## What Each Guide Covers
-
-### `developer-setup-guide.md`
-
-**Complete step-by-step setup guide with:**
-- Project overview and AI SSDLC harness introduction
-- Directory structure and file organization
-- `.claude/` folder configuration walkthrough
-- Context files (architecture, commands, glossary, hazards, security-posture)
-- Rules and guardrails for your tech stack
-- Hooks and lifecycle automation setup
-- Evals and custom skills validation
-- Common tasks and workflows
-- Troubleshooting and next steps
-
-**Use this:** First thing you read. Walks you through setup from start to finish.
 
 ### `getting-started-sample.md`
 
@@ -288,12 +316,27 @@ application-template/docs/guides/
 
 ---
 
+## Understanding D4 and D5
+
+**D = Development Phase** (part of the AI-Ready Secure Software Development Lifecycle)
+
+| Phase | Name | What | Duration | Owner |
+|-------|------|------|----------|-------|
+| **D4** | **Harness** | Setup Claude Code configuration & governance | 1-2 weeks | Dev Lead + Tech Lead |
+| **D5** | **Deploy** | Release to staging environment | 2-4 weeks | DevOps + QA |
+| **D6** | **Gate** | Compliance audit & sign-off | 1-2 weeks | Security Lead |
+| **D7** | **Operate** | Production monitoring & support | Ongoing | DevOps + SRE |
+
+**You are in Phase D4.** This folder has everything you need to complete it!
+
+---
+
 ## Document Status
 
 **Created:** 2026-10-01  
-**Last Updated:** 2026-10-02  
-**Total Lines:** ~2,767 (6 files + subdirectories)  
-**Status:** Complete reference suite for application setup with developer-setup-guide  
+**Last Updated:** 2026-10-04  
+**Total Lines:** 11,300+ (core + D4 setup guides)  
+**Status:** Complete reference suite for application setup + D4 harness configuration  
 
 ---
 

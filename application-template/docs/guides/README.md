@@ -6,20 +6,53 @@ This folder contains how-to guides, tutorials, and learning materials for workin
 
 ## Contents
 
+### 🆕 AI SSDLC Phase D4: Harness Setup
+
+**Complete setup for Claude Code configuration and governance**
+
+- **`developer-setup-guide.md`** — Master reference guide (2,900+ lines)
+  - All 8 phases of harness setup (foundation, architecture, security, configuration, source code, agents, workflow, verification)
+  - Activity checklist with time estimates and owners
+  - Common workflows and patterns
+  - Troubleshooting guide
+
+- **`phase-prompts.md`** — Ready-to-copy prompts (3,600+ lines)
+  - Complete copy-paste prompts for all 8 phases
+  - Recommended Claude models for each task (Haiku 4.5, Opus 5.5, /fast)
+  - Model recommendations: when to use which model for best results
+
+- **`phase-prompts-interactive.md`** — Interactive fill-in-the-blank (2,500+ lines)
+  - Customize prompts for your specific project
+  - Fill in project details → get personalized prompts
+  - Same 8 phases as developer-setup-guide.md
+
+- **`d4-completion-checklist.md`** — Verification & sign-off checklist (400+ lines)
+  - Comprehensive verification of all D4 configuration
+  - Team sign-offs (Tech Lead, Security Lead, Dev Lead)
+  - Readiness assessment before Phase D5 deployment
+
+- **`project-info-lifecycle.md`** — PROJECT_INFO.md lifecycle (350+ lines)
+  - What happens to PROJECT_INFO.md through all phases
+  - When to use it, update it, archive it
+  - How it feeds into configuration files
+
+### AI SSDLC Phase D5: Deploy
+
+- **`d5-deploy-phase.md`** — Deployment to staging (500+ lines)
+  - Build artifact creation
+  - Staging infrastructure setup
+  - Deployment process (manual, automated, container-based)
+  - Comprehensive testing (smoke, integration, E2E, performance, security, compliance)
+  - Documentation and runbooks
+  - Monitoring & alerting setup
+  - QA sign-off procedures
+
+---
+
 ### Getting Started
 
-- **`developer-setup-guide.md`** — Complete step-by-step setup from scratch
-  - AI SSDLC harness introduction and concepts
-  - Project structure and directory organization
-  - `.claude/` folder configuration (context, rules, hooks)
-  - Step-by-step walkthrough for each component
-  - Stack-specific examples and patterns
-  - Common tasks and troubleshooting
-  - **Read this first if you're new to the project**
-
-- **`getting-started-sample.md`** — Entry point for new team members
+- **`getting-started.md`** — Entry point for new team members
   - Project overview and architecture bird's-eye view
-  - Complete example with all sections filled out
   - Local development environment setup (prerequisites, IDE configuration)
   - Running the application locally (build commands, dev server startup)
   - Verifying your setup (smoke tests, "hello world" walkthrough)
@@ -147,6 +180,25 @@ This folder contains how-to guides, tutorials, and learning materials for workin
 
 ---
 
+## Claude Model Recommendations (D4 & D5)
+
+**Built into all Phase D4 & D5 guide prompts**
+
+| Task Type | Recommended Model | Why | Performance |
+|-----------|------------------|-----|-------------|
+| **Quick clarifications** | 🟢 Haiku 4.5 | Fast, simple form-filling | Very fast |
+| **Architecture & design** | 🔵 Opus 5.5 | Complex analysis, trade-offs | Slower but better |
+| **Security decisions** | 🔵 Opus 5.5 | Nuanced threat analysis | Slower but more thorough |
+| **Code generation** | 🟢 Haiku 4.5 | Fast generation after specs | Very fast |
+| **Compliance mapping** | 🔵 Opus 5.5 | Complex cross-domain analysis | Slower but comprehensive |
+| **Fast iteration** | ⚡ `/fast` mode | Opus 5.5 with faster output | Fast + comprehensive |
+
+**Where to find recommendations:**
+- `phase-prompts.md` — 🤖 indicator with each prompt
+- `phase-prompts-interactive.md` — 🤖 indicator with each section
+
+---
+
 ## When to Add Here
 
 Add a guide when:
@@ -248,14 +300,25 @@ Who to notify? How to notify?
 
 Different audiences should start with different guides:
 
+### Setting Up Phase D4 (Harness Configuration)
+
+| Audience | Start here | Prompts | Verify |
+|---|---|---|---|
+| **Dev Lead** | developer-setup-guide.md | phase-prompts.md (busy) or phase-prompts-interactive.md (thorough) | d4-completion-checklist.md |
+| **Tech Lead** | developer-setup-guide.md | phase-prompts.md (busy) or phase-prompts-interactive.md (thorough) | d4-completion-checklist.md |
+| **Security Lead** | developer-setup-guide.md (Phase 3) | phase-prompts.md (Phase 3) | d4-completion-checklist.md |
+| **DevOps** | d5-deploy-phase.md | Reference developer-setup-guide.md Phase 5 | d4-completion-checklist.md |
+
+### Regular Development
+
 | Audience | Start here | Then read | Finally |
 |---|---|---|---|
 | **New backend developer** | getting-started.md | project-structure-guide.md | agent-guide.md |
 | **New frontend developer** | getting-started.md | development-workflow.md | agent-guide.md |
-| **New QA engineer** | getting-started.md | testing-guide.md | deployment-runbook.md |
-| **DevOps/Ops** | getting-started.md | deployment-runbook.md | incident-response.md |
+| **New QA engineer** | getting-started.md | testing-guide.md | d5-deploy-phase.md |
+| **DevOps/Ops** | d5-deploy-phase.md | deployment-runbook.md | incident-response.md |
 | **Manager/stakeholder** | executive-summary.md | deployment-runbook.md | compliance-requirements.md |
-| **Security team** | security-best-practices.md | compliance-requirements.md | incident-response.md |
+| **Security team** | security-best-practices.md | compliance-requirements.md | d4-completion-checklist.md |
 
 ---
 

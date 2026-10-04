@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.286",
+  "startedAt": "2026-10-01T15:04:06.817Z",
+  "durationSeconds": 24,
+  "costUsd": 0.06277640000000001,
+  "partial": true,
+  "partialReason": "interrupted",
+  "suite": {
+    "root": "/Users/erwin.t.bainto/ai_projects/ai-ready-ssdlc/enterprise",
+    "ablation": "with-without",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "ai-ready-ssdlc-harness",
+        "version": "0.1.0",
+        "path": "/Users/erwin.t.bainto/ai_projects/ai-ready-ssdlc/enterprise"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "Vulnerability Patch Triage",
+      "dir": "evals/vuln-patch-triage",
+      "source": "mixed",
+      "promptMarkdown": "# Vulnerability patch triage eval\n\n## Input\n\nTicket: [SECURITY-5678] Remote Code Execution in PyYAML 5.x\n\n**Component**: PyYAML\n**Version**: 5.0 - 5.3.x\n**CVE**: CVE-2020-1747\n**Severity**: HIGH\n**Description**: A remote code execution vulnerability exists in PyYAML versions before 5.4 when using the unsafe Loader. The vulnerability allows arbitrary Python code execution through YAML deserialization of untrusted input.\n\n**Affected Code Path**: yaml.load() with Loader=yaml.Loader or default Loader\n**Remediation**: Update to PyYAML 5.4 or later, or use yaml.safe_load() instead of yaml.load()\n\n## Expected output\n\nA patch advisory covering:\n\n1. **Component and version**: confirmed from ticket\n2. **Reachability analysis**: determine whether <AFFECTED_PACKAGE> is used in this codebase\n   - Is it imported? Evidence (file and import statement)\n   - Is the vulnerable function called? Evidence\n   - Can it be reached from entry points? Evidence\n3. **Proposed remediation**: specific action (version bump, config change, code change)\n4. **Risk if deferred**: business impact\n5. **Effort**: rough estimate\n\nThe grader checks:\n- Did the analysis correctly identify reachability (or lack thereof)?\n- Is the evidence concrete (files and lines)?\n- Is the remediation specific and actionable?",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 10,
+      "graders": [
+        {
+          "name": "Triage Grader",
+          "type": "llm",
+          "weight": 1,
+          "graderMarkdown": "graders.md",
+          "config": {
+            "criteria": "graders.md",
+            "focus": "last_message"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 3,
+            "costUsd": 0.06277640000000001,
+            "judgeCostUsd": 0,
+            "durationSeconds": 24,
+            "startedAt": "2026-10-01T15:04:06.884Z",
+            "error": "interrupted",
+            "tracePath": "/private/tmp/e-wZTnPp/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "Triage Grader",
+                "passed": false,
+                "weight": 1,
+                "explanation": "grader threw: Request was aborted.",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 0,
+        "passRate": 0
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 1,
+    "casesPassed": 0,
+    "overallScore": 0,
+    "overallPassRate": 0
+  }
+}

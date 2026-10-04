@@ -2,16 +2,16 @@
 
 ## Input
 
-Ticket: [SECURITY-1234] Vulnerability in <AFFECTED_PACKAGE> <VERSION>
+Ticket: [SECURITY-5678] Remote Code Execution in PyYAML 5.x
 
-**Component**: <PACKAGE_NAME>
-**Version**: <AFFECTED_VERSION_RANGE>
-**CVE**: CVE-XXXX-XXXXX
-**Severity**: <HIGH | CRITICAL>
-**Description**: <VULNERABILITY_DESCRIPTION>
+**Component**: PyYAML
+**Version**: 5.0 - 5.3.x
+**CVE**: CVE-2020-1747
+**Severity**: HIGH
+**Description**: A remote code execution vulnerability exists in PyYAML versions before 5.4 when using the unsafe Loader. The vulnerability allows arbitrary Python code execution through YAML deserialization of untrusted input.
 
-**Affected Code Path**: <vulnerability_path_in_affected_library>
-**Remediation**: Update to <FIXED_VERSION> or apply patch <PATCH_ID>
+**Affected Code Path**: yaml.load() with Loader=yaml.Loader or default Loader
+**Remediation**: Update to PyYAML 5.4 or later, or use yaml.safe_load() instead of yaml.load()
 
 ## Expected output
 
