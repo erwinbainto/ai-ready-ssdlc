@@ -156,7 +156,7 @@
 ## Organization Structure
 
 ```
-rrd-ir/docs/guides/
+<APPLICATION_NAME>/docs/guides/
 
 🆕 00-START-HERE.md (this file)
    └─ Navigation & task routing
