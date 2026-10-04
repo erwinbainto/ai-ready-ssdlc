@@ -11,7 +11,9 @@
       "Bash(xargs ls -lh)",
       "Bash(claude plugin *)",
       "Bash(cat)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(xargs ls -la)",
+      "Bash(python3 *)"
     ]
   }
 }

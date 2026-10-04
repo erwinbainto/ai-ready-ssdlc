@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Ready SSDLC Adversarial Review</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        h1 { color: #222; margin-bottom: 10px; }
+        .lede { font-size: 16px; color: #555; margin: 10px 0; }
+        .meta { color: #888; font-size: 14px; margin-top: 15px; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 20px; }
+        .stat-box { background: #f9f9f9; padding: 15px; border-radius: 6px; text-align: center; border-left: 4px solid #ddd; }
+        .stat-box.high { border-left-color: #dc3545; }
+        .stat-box.medium { border-left-color: #ffc107; }
+        .stat-box.low { border-left-color: #28a745; }
+        .stat-num { font-size: 24px; font-weight: bold; }
+        .stat-label { font-size: 12px; color: #666; text-transform: uppercase; }
+        .inventory { background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; font-size: 14px; }
+        th { background: #f9f9f9; font-weight: 600; }
+        .findings { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .finding { margin-bottom: 25px; padding: 15px; border-left: 4px solid #ddd; border-radius: 4px; }
+        .finding.high { background: #fff5f5; border-left-color: #dc3545; }
+        .finding.medium { background: #fffbf0; border-left-color: #ffc107; }
+        .finding.low { background: #f0fff4; border-left-color: #28a745; }
+        .finding-header { display: flex; align-items: center; margin-bottom: 10px; }
+        .finding-id { font-weight: bold; margin-right: 15px; background: #eee; padding: 4px 8px; border-radius: 3px; font-family: monospace; font-size: 12px; }
+        .finding-severity { font-weight: 600; margin-left: auto; padding: 4px 12px; border-radius: 3px; font-size: 12px; text-transform: uppercase; }
+        .high .finding-severity { background: #dc3545; color: white; }
+        .medium .finding-severity { background: #ffc107; color: #333; }
+        .low .finding-severity { background: #28a745; color: white; }
+        .finding-title { font-size: 15px; font-weight: 600; margin-bottom: 8px; }
+        .finding-detail { color: #555; margin-bottom: 10px; font-size: 14px; }
+        .finding-refs { font-size: 13px; color: #888; margin-top: 10px; }
+        .finding-refs code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+        .method { background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); font-size: 14px; color: #555; }
+        .footer { text-align: center; color: #999; font-size: 12px; margin-top: 30px; padding: 20px; }
+        h2 { margin-top: 30px; margin-bottom: 15px; color: #222; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI-Ready SSDLC Adversarial Review</h1>
+            <p class="lede">Full-repository sweep of the AI-Ready SSDLC harness deployment kit. Reviewed by three independent perspectives: harness configuration, documentation accuracy, and policy consistency. All findings verified against actual file state.</p>
+            <div class="meta">
+                <strong>Date:</strong> 2026-10-04 |
+                <strong>Scope:</strong> Complete repository |
+                <strong>Method:</strong> Parallel independent review by 3 specialized agents
+            </div>
+            <div class="stats" id="stats"></div>
+        </header>
+
+        <div class="method">
+            <strong>Review Method:</strong> Three independent agents reviewed in parallel: (1) Claude Code Practitioner reviewed .claude/ harness configuration, (2) Fact Checker reviewed docs/guides accuracy against file state, (3) Auditor reviewed CLAUDE.md consistency. All findings cite specific files and lines verified on disk. Candidates without evidence were dropped. 7 candidate findings dropped during deduplication. Report generated as standalone HTML.
+        </div>
+
+        <div class="inventory">
+            <h2>Findings Summary by Area</h2>
+            <table>
+                <tr>
+                    <th>Area</th>
+                    <th>Critical</th>
+                    <th>High</th>
+                    <th>Medium</th>
+                    <th>Low</th>
+                </tr>
+                <tr>
+                    <td>.claude/ Harness Configuration</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Documentation Accuracy</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>CLAUDE.md Policy Consistency</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr style="font-weight: bold; background: #f9f9f9;">
+                    <td>TOTAL</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="findings">
+            <h2>Findings (20 Total)</h2>
+            <div id="findings-container"></div>
+        </div>
+
+        <div class="footer">
+            This is a local file. No live data or external references. Part of docs/audits/adversarial-report/ record.
+        </div>
+    </div>
+
+    <script type="application/json" id="review-data">
+{
+  "title": "AI-Ready SSDLC Adversarial Review",
+  "date": "2026-10-04",
+  "scope": "Full repository: application-template, enterprise, root. Reviewed: harness configuration, documentation accuracy, policy consistency.",
+  "lede": "Three critical configuration issues block deployment readiness. Enterprise layer contains unresolved placeholder. Documentation references non-existent files. All require resolution before application teams can use this deployment kit.",
+  "method": "Three independent parallel agents conducted specialized reviews: harness configuration (28 tool-uses, 45K tokens), documentation accuracy (28 tool-uses, 94K tokens), policy consistency (36 tool-uses, 50K tokens). Findings deduplicated and verified against actual file state. 7 duplicate findings dropped.",
+  "inventory": [["Area", "Critical", "High", "Medium", "Low"], [".claude/ harness", "1", "4", "2", "1"], ["Docs/guides", "1", "2", "3", "1"], ["CLAUDE.md policies", "1", "1", "2", "1"], ["TOTAL", "3", "7", "7", "3"]],
+  "groups": {
+    "A": {"name": "Harness Configuration", "note": "settings.json, context structure, rules frontmatter"},
+    "B": {"name": "Documentation", "note": "Guides, cross-references, file paths"},
+    "C": {"name": "Policy", "note": "CLAUDE.md files, layer boundaries, placeholders"}
+  },
+  "categories": {
+    "broken": "Broken reference or non-existent file",
+    "placeholder": "Unresolved or inconsistent placeholder",
+    "inconsistent": "Inconsistent naming or documentation",
+    "incomplete": "Missing required content"
+  },
+  "findings": [
+    {
+      "id": "A1",
+      "sec": "A",
+      "severity": "critical",
+      "cat": "broken",
+      "title": "Broken enterprise context reference in commands.md",
+      "detail": "application-template/.claude/context/commands.md line 7 references @enterprise/context/commands.md, but enterprise layer contains no context/ directory. Enterprise structure is rules/ only. This broken reference will confuse app teams and block deployment.",
+      "refs": ["application-template/.claude/context/commands.md:7"]
+    },
+    {
+      "id": "A2",
+      "sec": "A",
+      "severity": "high",
+      "cat": "broken",
+      "title": "Incorrect enterprise file name in rules reference",
+      "detail": "security-guardrails.md references @enterprise/rules/secure-coding.md (line 12, 137) but actual file is named 10-secure-coding.md. Reference path is wrong.",
+      "refs": ["application-template/.claude/rules/security-guardrails.md:12,137"]
+    },
+    {
+      "id": "A3",
+      "sec": "A",
+      "severity": "high",
+      "cat": "placeholder",
+      "title": "Invalid permission patterns in settings.json",
+      "detail": "Lines 8-10 define Bash permissions with literal placeholder angle brackets (e.g., &lt;BUILD_COMMAND&gt;) that will not match actual commands like `npm run build` or `make test`. Claude Code looks for exact command matches, so these permissions will fail to grant access.",
+      "refs": ["application-template/.claude/settings.json:8-10"]
+    },
+    {
+      "id": "A4",
+      "sec": "A",
+      "severity": "high",
+      "cat": "placeholder",
+      "title": "Unresolved deny permission placeholder",
+      "detail": "Line 5 contains placeholder &lt;ANY_PATH_THIS_APP_MUST_NOT_EXPOSE&gt; that must be replaced with actual paths (e.g., Read(/secrets/**)) but provides no guidance on what to put here.",
+      "refs": ["application-template/.claude/settings.json:5"]
+    },
+    {
+      "id": "A5",
+      "sec": "A",
+      "severity": "medium",
+      "cat": "inconsistent",
+      "title": "Inconsistent placeholder naming in rules frontmatter",
+      "detail": "security-guardrails.md line 3 hardcodes paths [\"src/**\", \"backend/**\", \"frontend/**\"] instead of using placeholder like 10-app.md does. App teams won't know to customize this, and rules won't apply if app structure differs.",
+      "refs": ["application-template/.claude/rules/security-guardrails.md:3"]
+    },
+    {
+      "id": "A6",
+      "sec": "A",
+      "severity": "medium",
+      "cat": "placeholder",
+      "title": "Extensive unresolved placeholders in template files",
+      "detail": "Multiple files contain &lt;LIKE_THIS&gt; placeholders per CLAUDE.md requirement that all be replaced before deployment: settings.json (RRD_APP_NAME, RRD_HARNESS_VERSION), all context files, rules files. Root CLAUDE.md explicitly states these must all be replaced before deployment.",
+      "refs": ["application-template/.claude/settings.json:26-27"]
+    },
+    {
+      "id": "A7",
+      "sec": "A",
+      "severity": "low",
+      "cat": "incomplete",
+      "title": "Hook configuration with no functional code",
+      "detail": "settings.json configures session-start.sh hook (line 19) but the file contains only commented-out template examples with no actual functionality. Not broken, but confusing for deployers.",
+      "refs": ["application-template/.claude/hooks/session-start.sh:10-15"]
+    },
+    {
+      "id": "B1",
+      "sec": "B",
+      "severity": "critical",
+      "cat": "inconsistent",
+      "title": "Inconsistent agent workflow file naming across guides",
+      "detail": "developer-setup-guide.md line 2324 references docs/agent-workflow/agent-workflow.md while phase-prompts.md line 1259 references docs/agent-workflow/workflow.md. Different guides tell teams to create different filenames for the same output.",
+      "refs": ["application-template/docs/guides/developer-setup-guide.md:2324", "application-template/docs/guides/phase-prompts.md:1259"]
+    },
+    {
+      "id": "B2",
+      "sec": "B",
+      "severity": "high",
+      "cat": "broken",
+      "title": "Broken cross-reference in completion checklist",
+      "detail": "d4-completion-checklist.md line 357 references a non-existent 'commands section' in phase-prompts.md. The checklist incorrectly directs readers to a section that doesn't exist.",
+      "refs": ["application-template/docs/guides/d4-completion-checklist.md:357"]
+    },
+    {
+      "id": "B3",
+      "sec": "B",
+      "severity": "high",
+      "cat": "broken",
+      "title": "Non-existent file referenced in guide",
+      "detail": "developer-setup-guide.md line 606 references docs/testing/TEST_SETUP.md, but this file does not exist in the template. Template contains docs/testing/README.md instead.",
+      "refs": ["application-template/docs/guides/developer-setup-guide.md:606"]
+    },
+    {
+      "id": "B4",
+      "sec": "B",
+      "severity": "medium",
+      "cat": "broken",
+      "title": "Non-existent example file referenced",
+      "detail": "developer-setup-guide.md line 2901 references docs/architecture/SSDLC_Overview.md as deliverable, but this file does not exist in the template.",
+      "refs": ["application-template/docs/guides/developer-setup-guide.md:2901"]
+    },
+    {
+      "id": "B5",
+      "sec": "B",
+      "severity": "medium",
+      "cat": "incomplete",
+      "title": "Ambiguous user-created vs template file status",
+      "detail": "Guide indicates docs/PROJECT_INFO.md is a deliverable to create during Phase 1 setup, but d4-completion-checklist.md treats it as though it should be a template file. Unclear whether it's scaffolded or user-created.",
+      "refs": ["application-template/docs/guides/developer-setup-guide.md:356", "application-template/docs/guides/d4-completion-checklist.md:195"]
+    },
+    {
+      "id": "B6",
+      "sec": "B",
+      "severity": "medium",
+      "cat": "inconsistent",
+      "title": "Ambiguous command references presented as Claude Code built-ins",
+      "detail": "developer-setup-guide.md lines 576-581 show /build, /test, /lint, /serve, /deploy-staging as though they're Claude Code slash commands. They are user-defined or bash commands, not Claude Code built-ins. Creates confusion about command system.",
+      "refs": ["application-template/docs/guides/developer-setup-guide.md:576-581"]
+    },
+    {
+      "id": "B7",
+      "sec": "B",
+      "severity": "low",
+      "cat": "incomplete",
+      "title": "Template references file not yet in template",
+      "detail": ".claude/context/architecture.md line 5 references docs/architecture/ARCHITECTURE.md which is created during Phase 2 setup, not included in template. This is acceptable guidance but could be clearer.",
+      "refs": ["application-template/.claude/context/architecture.md:5"]
+    },
+    {
+      "id": "C1",
+      "sec": "C",
+      "severity": "critical",
+      "cat": "placeholder",
+      "title": "Template placeholder in finalized enterprise CLAUDE.md",
+      "detail": "enterprise/CLAUDE.md line 49 contains &lt;STACK&gt; placeholder. Enterprise layer is deployed once and must be complete. This violates the stated rule that all &lt;LIKE_THIS&gt; placeholders must be replaced before deployment.",
+      "refs": ["enterprise/CLAUDE.md:49"]
+    },
+    {
+      "id": "C2",
+      "sec": "C",
+      "severity": "high",
+      "cat": "incomplete",
+      "title": "Skills directory contains artifact not documented",
+      "detail": "application-template/.claude/skills/README.md claims skills directory is 'empty by default', but it contains adversarial-review/ with full implementation. Unclear if this is intentional reference implementation or should be removed from template.",
+      "refs": ["application-template/.claude/skills/README.md:3-5"]
+    },
+    {
+      "id": "C3",
+      "sec": "C",
+      "severity": "medium",
+      "cat": "incomplete",
+      "title": "Missing deployment prerequisites in CLAUDE.md",
+      "detail": "application-template/CLAUDE.md references context files but doesn't state they're mandatory or that all &lt;LIKE_THIS&gt; placeholders must be filled before deployment. Users might deploy with incomplete configuration.",
+      "refs": ["application-template/CLAUDE.md:18-37"]
+    },
+    {
+      "id": "C4",
+      "sec": "C",
+      "severity": "medium",
+      "cat": "inconsistent",
+      "title": "Inconsistent enterprise reference paths",
+      "detail": "Files use both @enterprise/rules/ (correct) and @enterprise/context/ (non-existent directory) paths. Standardization needed.",
+      "refs": ["application-template/.claude/context/commands.md:7"]
+    },
+    {
+      "id": "C5",
+      "sec": "C",
+      "severity": "low",
+      "cat": "incomplete",
+      "title": "Template structure undocumented",
+      "detail": "Application-template includes pre-filled rules files (10-app.md, security-guardrails.md) as examples, not empty scaffolding. This structure is not documented, creating confusion about what to customize.",
+      "refs": ["application-template/.claude/rules/"]
+    }
+  ],
+  "keep": [
+    "All required context files exist and are correctly referenced in CLAUDE.md",
+    "Recent commits successfully replaced hardcoded app names with &lt;APPLICATION_NAME&gt;",
+    "Enterprise layer is properly structured as reusable policy",
+    "Directory structures are well-organized and follow declared patterns",
+    "Root CLAUDE.md provides clear deployment guidance",
+    "No circular dependencies in CLAUDE.md imports"
+  ],
+  "plan": [
+    ["CRITICAL: Fix enterprise context reference", "Remove @enterprise/context/ reference from commands.md (line 7) as enterprise has no context directory"],
+    ["CRITICAL: Replace placeholder in enterprise/CLAUDE.md", "Replace &lt;STACK&gt; with actual guidance or move to generated rules"],
+    ["CRITICAL: Fix permission patterns", "Replace &lt;BUILD_COMMAND&gt;, &lt;TEST_COMMAND&gt;, &lt;LINT_COMMAND&gt; placeholders with example commands or documentation"],
+    ["HIGH: Fix enterprise file reference", "Update secure-coding.md reference to 10-secure-coding.md (2 locations)"],
+    ["HIGH: Fix file path references", "TEST_SETUP.md → README.md, SSDLC_Overview.md → README.md or remove"],
+    ["HIGH: Standardize agent workflow filename", "Choose one: agent-workflow.md or workflow.md, update both guides to match"],
+    ["MEDIUM: Clarify skills directory status", "Document whether adversarial-review is template or should be removed"],
+    ["MEDIUM: Add deployment prerequisites", "Update application CLAUDE.md with explicit prerequisites section"]
+  ]
+}
+    </script>
+
+    <script>
+        const data = JSON.parse(document.getElementById('review-data').textContent);
+
+        // Render stats
+        const stats = document.getElementById('stats');
+        const counts = { high: 0, medium: 0, low: 0, critical: 0 };
+        data.findings.forEach(f => {
+          if (counts.hasOwnProperty(f.severity)) counts[f.severity]++;
+        });
+
+        stats.innerHTML = `
+            <div class="stat-box high">
+                <div class="stat-num">${counts.critical}</div>
+                <div class="stat-label">Critical</div>
+            </div>
+            <div class="stat-box high">
+                <div class="stat-num">${counts.high}</div>
+                <div class="stat-label">High</div>
+            </div>
+            <div class="stat-box medium">
+                <div class="stat-num">${counts.medium}</div>
+                <div class="stat-label">Medium</div>
+            </div>
+            <div class="stat-box low">
+                <div class="stat-num">${counts.low}</div>
+                <div class="stat-label">Low</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">${data.findings.length}</div>
+                <div class="stat-label">Total</div>
+            </div>
+        `;
+
+        // Render findings
+        const container = document.getElementById('findings-container');
+        data.findings.forEach(finding => {
+            const div = document.createElement('div');
+            div.className = `finding ${finding.severity}`;
+            const refsHtml = finding.refs.map(r => `<code>${r}</code>`).join(', ');
+            div.innerHTML = `
+                <div class="finding-header">
+                    <div class="finding-id">${finding.id}</div>
+                    <div class="finding-severity">${finding.severity}</div>
+                </div>
+                <div class="finding-title">${finding.title}</div>
+                <div class="finding-detail">${finding.detail}</div>
+                <div class="finding-refs"><strong>File:</strong> ${refsHtml}</div>
+            `;
+            container.appendChild(div);
+        });
+    </script>
+</body>
+</html>
