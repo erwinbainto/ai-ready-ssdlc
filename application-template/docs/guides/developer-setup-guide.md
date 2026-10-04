@@ -1,6 +1,6 @@
-# rrd-ir Developer Setup Guide
+# <APPLICATION_NAME> Developer Setup Guide
 
-**Complete step-by-step guide for setting up the rrd-ir project from the AI SSDLC template**
+**Complete step-by-step guide for setting up the <APPLICATION_NAME> project from the AI SSDLC template**
 
 **Audience:** Development teams new to Claude Code and the AI-Ready Secure Software Development Lifecycle (SSDLC) harness
 
@@ -36,7 +36,7 @@
 
 ## What You're Setting Up
 
-The **rrd-ir** project is a new application built on the **AI-Ready Secure Software Development Lifecycle (SSDLC) harness**. This is a governance and automation framework that:
+The **<APPLICATION_NAME>** project is a new application built on the **AI-Ready Secure Software Development Lifecycle (SSDLC) harness**. This is a governance and automation framework that:
 
 ✅ **Enables AI-assisted development** using Claude Code  
 ✅ **Enforces security standards** through code analysis and guardrails  
@@ -58,7 +58,7 @@ Think of it as a **smart project scaffolding system** that combines:
 ### Directory Map
 
 ```
-rrd-ir/
+<APPLICATION_NAME>/
 │
 ├── CLAUDE.md                    ← Project instructions for Claude Code
 ├── README.md                    ← Project overview & deployment checklist
@@ -226,7 +226,7 @@ Each phase builds on the previous one:
 #### 1.1 Initialize Git Repository
 
 ```bash
-cd /Users/erwin.t.bainto/ai_projects/rrd-ir
+cd /Users/erwin.t.bainto/ai_projects/<APPLICATION_NAME>
 
 # Initialize git
 git init
@@ -235,7 +235,7 @@ git init
 git add .
 
 # Create initial commit
-git commit -m "Initial commit: rrd-ir project template from application-template"
+git commit -m "Initial commit: <APPLICATION_NAME> project template from application-template"
 ```
 
 **Why:** You need version control to track changes and enforce write boundaries.
@@ -326,7 +326,7 @@ Before you configure `.claude/`, answer these questions:
 Create a simple document with your answers:
 
 ```markdown
-# rrd-ir Project Information
+# <APPLICATION_NAME> Project Information
 
 ## Application Purpose
 [Your answer from 2.1]
@@ -386,7 +386,7 @@ The context folder contains information **about** your project. Claude reads the
 2. Replace placeholders:
 
 ```markdown
-# Architecture — rrd-ir
+# Architecture — <APPLICATION_NAME>
 
 **Last Updated:** 2026-10-02
 **Owner:** [Tech Lead Name]
@@ -399,7 +399,7 @@ The context folder contains information **about** your project. Claude reads the
 [Your answer from Section 2.1 - describe the application]
 
 **Example:**
-"rrd-ir is a real-time revenue recognition system that processes
+"<APPLICATION_NAME> is a real-time revenue recognition system that processes
 financial transactions for SaaS companies. It calculates revenue
 recognition based on ASC 606 standards and provides compliance reporting
 to finance teams and auditors."
@@ -773,11 +773,11 @@ Rules define **how** your team should write code. Claude will enforce these.
 
 ```markdown
 ---
-description: rrd-ir Java/Spring Boot conventions and guardrails
+description: <APPLICATION_NAME> Java/Spring Boot conventions and guardrails
 paths: ["src/**/*.java"]
 ---
 
-# rrd-ir Conventions
+# <APPLICATION_NAME> Conventions
 
 App-specific conventions that narrow enterprise standards. Never looser.
 
@@ -991,11 +991,11 @@ git commit -m "docs: complete 10-app.md with Java/Spring conventions"
 
 ```markdown
 ---
-description: Mandatory security controls for rrd-ir (PCI DSS & GDPR compliant)
+description: Mandatory security controls for <APPLICATION_NAME> (PCI DSS & GDPR compliant)
 paths: ["src/**"]
 ---
 
-# Security Guardrails — rrd-ir
+# Security Guardrails — <APPLICATION_NAME>
 
 Mandatory security rules. Narrower than enterprise; specific to this app's tech stack and threat model.
 
@@ -1190,13 +1190,13 @@ Hooks run automatically to automate tasks and enforce policy.
 
 ```bash
 #!/usr/bin/env bash
-# Session startup hook for rrd-ir
+# Session startup hook for <APPLICATION_NAME>
 # Runs when Claude Code session starts
 # Checks prerequisites and prints status
 
 set -euo pipefail
 
-echo "🚀 Starting rrd-ir development environment..."
+echo "🚀 Starting <APPLICATION_NAME> development environment..."
 echo ""
 
 # Check Java version
@@ -1268,7 +1268,7 @@ bash .claude/hooks/session-start.sh
 **Expected output:**
 
 ```
-🚀 Starting rrd-ir development environment...
+🚀 Starting <APPLICATION_NAME> development environment...
 
 ✓ Checking Java version...
   ✓ Java 21.0.1 found
@@ -1310,7 +1310,7 @@ git commit -m "docs: configure session-start.sh hook with prerequisite checks"
 
 ```json
 {
-  "_comment_scope": "Tier 3. Narrows enterprise policy for rrd-ir application.",
+  "_comment_scope": "Tier 3. Narrows enterprise policy for <APPLICATION_NAME> application.",
   
   "permissions": {
     "deny": [
@@ -1346,7 +1346,7 @@ git commit -m "docs: configure session-start.sh hook with prerequisite checks"
   },
   
   "env": {
-    "RRD_APP_NAME": "rrd-ir",
+    "RRD_APP_NAME": "<APPLICATION_NAME>",
     "RRD_HARNESS_VERSION": "1.0.0",
     "ENVIRONMENT": "development",
     "LOG_LEVEL": "INFO"
@@ -1385,13 +1385,13 @@ git commit -m "docs: configure settings.json with permissions and environment"
 2. Fill in with your project details:
 
 ```markdown
-# rrd-ir
+# <APPLICATION_NAME>
 
 Extends the enterprise harness instructions. Everything in the enterprise set applies here.
 
 ## What this application is
 
-**rrd-ir** is a revenue recognition system that processes financial transactions and calculates revenue recognition based on ASC 606 standards. It serves finance teams and provides compliance reporting to auditors.
+**<APPLICATION_NAME>** is a revenue recognition system that processes financial transactions and calculates revenue recognition based on ASC 606 standards. It serves finance teams and provides compliance reporting to auditors.
 
 **Users:** Finance teams, CFO, auditors
 **Value:** Automates revenue recognition calculations, reduces manual effort by 80%, ensures compliance
@@ -1884,7 +1884,7 @@ git commit -m "feat: publish invoice-automation skill
 **Goal:** Establish what this project is and who's on the team
 
 - [ ] **1.1 Answer Project Details**
-  - [ ] Application name: _________________ (should be "rrd-ir")
+  - [ ] Application name: _________________ (should be "<APPLICATION_NAME>")
   - [ ] Business purpose (2-3 sentences): _________________
   - [ ] Users/stakeholders: _________________
   - [ ] Tech lead name & email: _________________
@@ -1918,7 +1918,7 @@ git commit -m "feat: publish invoice-automation skill
 
 - [ ] **1.4 Git Repository Setup**
   ```bash
-  cd /Users/erwin.t.bainto/ai_projects/rrd-ir
+  cd /Users/erwin.t.bainto/ai_projects/<APPLICATION_NAME>
   git status  # Verify repo exists
   ```
   - [ ] Repository initialized

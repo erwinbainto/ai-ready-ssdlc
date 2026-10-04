@@ -90,7 +90,7 @@ This file contains complete, copy-paste-ready prompts for each phase of the deve
 **📋 PROMPT:**
 
 ```
-I'm setting up a new project using the rrd-ir AI SSDLC template. 
+I'm setting up a new project using the <APPLICATION_NAME> AI SSDLC template. 
 I need to answer foundational questions about my project.
 
 Please help me document these answers (you don't need to provide answers, 
@@ -123,7 +123,7 @@ For each, I'll provide my project's details, and you confirm they're complete.
 **📋 PROMPT:**
 
 ```
-I'm documenting my project's technology stack for the rrd-ir template.
+I'm documenting my project's technology stack for the <APPLICATION_NAME> template.
 
 Please help me organize this information for storage in my project:
 
@@ -1019,7 +1019,7 @@ Extends the enterprise harness instructions. Everything in the enterprise set ap
 [2-3 sentences: Business purpose, users, value]
 
 **Example:**
-"rrd-ir is a revenue recognition system that processes financial transactions 
+"<APPLICATION_NAME> is a revenue recognition system that processes financial transactions 
 for SaaS companies. It calculates revenue recognition based on ASC 606 standards 
 and provides compliance reporting to finance teams and auditors."
 

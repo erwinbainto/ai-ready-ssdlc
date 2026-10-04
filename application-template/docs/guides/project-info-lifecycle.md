@@ -60,7 +60,7 @@ PRODUCTION (Ongoing)
 ### What Gets Documented
 
 ```markdown
-# rrd-ir Project Information
+# <APPLICATION_NAME> Project Information
 
 ## Application Purpose
 [2-3 sentence business description]

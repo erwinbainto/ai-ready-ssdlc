@@ -78,7 +78,7 @@ Move from development environment to **staging environment** with full verificat
 
 ```bash
 # From your project root
-cd /Users/erwin.t.bainto/ai_projects/rrd-ir
+cd /Users/erwin.t.bainto/ai_projects/<APPLICATION_NAME>
 
 # Run build command (from .claude/context/commands.md)
 [YOUR_BUILD_COMMAND]

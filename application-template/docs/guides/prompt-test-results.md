@@ -32,7 +32,7 @@ See: `/scratchpad/sample-project-data.md`
 
 **Prompt Test:**
 ```
-I'm setting up a new project called "OrderFlow" using the rrd-ir AI SSDLC template.
+I'm setting up a new project called "OrderFlow" using the <APPLICATION_NAME> AI SSDLC template.
 I need to answer foundational questions about my project.
 
 Project Details:
@@ -276,7 +276,7 @@ All prompts tested and working correctly.
    - Use D4 completion checklist
    - Proceed to Phase D5 deployment
 
-3. **For this project (rrd-ir):**
+3. **For this project (<APPLICATION_NAME>):**
    - Create real project data
    - Run prompts with actual team details
    - Generate actual `.claude/` configuration

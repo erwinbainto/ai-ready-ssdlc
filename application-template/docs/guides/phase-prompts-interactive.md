@@ -138,7 +138,7 @@ WRITE APPROVER: ___________________ (name & email)
 Once filled above, copy and paste this to Claude:
 
 ```
-I'm setting up a new project called "[PROJECT NAME]" using the rrd-ir AI SSDLC template.
+I'm setting up a new project called "[PROJECT NAME]" using the <APPLICATION_NAME> AI SSDLC template.
 
 Project Details:
 - Name: [PROJECT NAME]
