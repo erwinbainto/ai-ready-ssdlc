@@ -15,6 +15,14 @@ here and is not restated.
 | <core module> | `<path>` | <what it does> |
 | <generated> | `<path>` | **Generated. Never hand-edit.** |
 
+## Architecture
+
+See `.claude/context/architecture.md` for system design, components, and key decisions. Understand the system's structure, how components fit together, and architectural rationale before proposing changes.
+
+## Security & Compliance
+
+See `.claude/context/security-posture.md` for compliance requirements, authentication/authorization model, data classification, and security baseline. Critical for understanding what security controls apply to this system.
+
 ## Commands
 
 The declared command contract is in `.claude/context/commands.md`. Use those commands and
