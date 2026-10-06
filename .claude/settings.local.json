@@ -15,5 +15,10 @@
       "Bash(xargs ls -la)",
       "Bash(python3 *)"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "source-control",
+    "work-management",
+    "build-and-test"
+  ]
 }
